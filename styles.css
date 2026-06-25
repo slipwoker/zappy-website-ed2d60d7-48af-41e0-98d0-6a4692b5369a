@@ -101,7 +101,7 @@
   --spacing-element-gap: 16px;
   --transition-default: all 0.3s ease;
   --transition-hover: all 0.3s ease;
-  --nav-overlay-opacity: 0.7;
+  --nav-overlay-opacity: 0;
 }
 
 /* CSS Reset / Normalize */
@@ -5428,6 +5428,1138 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
 
 /* END MOBILE RESPONSIVE FIXES */
 
+
+
+/* Legal Pages Content Styles */
+
+/* Legal Pages Content Styles */
+.legal-page-content {
+  padding: 120px 0 60px;
+  min-height: 60vh;
+  color: inherit;
+}
+
+.legal-page-content .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.legal-page-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: inherit;
+}
+
+.legal-page-content .last-updated {
+  color: #666;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.legal-page-content h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: inherit;
+}
+
+.legal-page-content p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.legal-page-content ul {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+[dir="rtl"] .legal-page-content ul {
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+
+.legal-page-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.legal-page-content .contact-box,
+.legal-page-content .contact-info {
+  background: rgba(0, 0, 0, 0.03);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.legal-page-content .contact-box a,
+.legal-page-content .contact-info a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.legal-page-content .contact-box a:hover,
+.legal-page-content .contact-info a:hover {
+  opacity: 0.8;
+}
+
+.legal-page-content .important-notice,
+.legal-page-content .legal-reference {
+  background: rgba(0, 0, 0, 0.03);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  border-left: 4px solid currentColor;
+}
+
+[dir="rtl"] .legal-page-content .important-notice,
+[dir="rtl"] .legal-page-content .legal-reference {
+  border-left: none;
+  border-right: 4px solid currentColor;
+}
+
+/* Cookie Consent Styles */
+
+/* Cookie Consent Customizations ccCssV13 */
+:root {
+  /* --cc-bg has to STAY translucent (with the matching backdrop-filter on
+   * the bar below) so the slim bar reads as a frosted overlay rather than
+   * a solid horizontal stripe slapped on top of the page. The preferences
+   * modal — which doesn't use backdrop-filter — overrides this to a solid
+   * white below so it doesn't render see-through against the page. */
+  --cc-bg: rgba(255, 255, 255, 0.96);
+  --cc-modal-bg: #ffffff;
+  --cc-primary-color: #1f2937;
+  --cc-secondary-color: #4b5563;
+  --cc-btn-primary-bg: #d94b3d;
+  --cc-btn-primary-color: #ffffff;
+  --cc-btn-primary-border: #d94b3d;
+  --cc-btn-primary-hover-bg: #c03224;
+  --cc-btn-primary-hover-border: #c03224;
+  --cc-btn-primary-hover-color: #ffffff;
+  /* --cc-btn-secondary-* are used by BOTH the bar's "Customize" link and
+   * the preferences modal's "Accept Necessary" / "Save Preferences" pills.
+   * We keep the token defaults sensible (light grey fill, dark text) so
+   * the preferences-modal buttons stay visible, then override only
+   * .zappy-cookie-banner__button--customize directly to render the
+   * Customize link as a transparent underlined text. */
+  --cc-btn-secondary-bg: #f3f4f6;
+  --cc-btn-secondary-color: #1f2937;
+  --cc-btn-secondary-border: #e5e7eb;
+  --cc-btn-secondary-hover-bg: #e5e7eb;
+  --cc-btn-secondary-hover-color: #111827;
+  --cc-btn-secondary-hover-border: #d1d5db;
+  --cc-toggle-on-bg: #d94b3d;
+}
+
+#cc-main,
+#cc--main {
+  font-family: inherit !important;
+  color: var(--cc-primary-color);
+}
+
+/* === Zappy-owned slim bottom bar ===
+ * Single-row inline layout: [description text] ......... [Customize] [Accept]
+ * The banner is our DOM (#zappy-cookie-banner), not the library's #cm
+ * consent modal. That avoids vanilla-cookieconsent's internal
+ * <button><span>Label</span></button> structure entirely.
+ */
+#zappy-cookie-banner {
+  position: fixed !important;
+  inset: auto 0 0 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 10px 56px 10px 20px !important;
+  background: var(--cc-bg) !important;
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  backdrop-filter: saturate(180%) blur(12px);
+  border: none !important;
+  border-top: 1px solid rgba(217, 75, 61, 0.18) !important;
+  border-radius: 0 !important;
+  box-shadow: 0 -1px 12px rgba(0, 0, 0, 0.04) !important;
+  display: flex !important;
+  align-items: center !important;
+  min-height: 52px !important;
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  z-index: 2147483646;
+}
+
+#zappy-cookie-banner .zappy-cookie-banner__inner {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  gap: 16px !important;
+  max-width: 1200px;
+  width: 100% !important;
+  margin: 0 auto;
+  padding: 0 !important;
+  min-height: 32px !important;
+}
+
+#zappy-cookie-banner .zappy-cookie-banner__text {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  color: var(--cc-primary-color) !important;
+  height: 32px !important;
+  min-height: 32px !important;
+  line-height: 32px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#zappy-cookie-banner .zappy-cookie-banner__actions {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 8px !important;
+  flex: 0 0 auto;
+  border: none !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+#zappy-cookie-banner .zappy-cookie-banner__button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  padding: 0 16px !important;
+  height: 32px !important;
+  min-height: 0 !important;
+  line-height: 1 !important;
+  border-radius: 999px !important;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  cursor: pointer;
+}
+
+/* Primary "Accept" — filled pill in site primary color */
+#zappy-cookie-banner .zappy-cookie-banner__button--accept {
+  background-color: var(--cc-btn-primary-bg) !important;
+  color: var(--cc-btn-primary-color) !important;
+  border: 1px solid var(--cc-btn-primary-border) !important;
+}
+
+#zappy-cookie-banner .zappy-cookie-banner__button--accept:hover {
+  background-color: var(--cc-btn-primary-hover-bg) !important;
+  border-color: var(--cc-btn-primary-hover-border) !important;
+}
+
+/* Secondary "Customize" — borderless underlined text link.
+ * Same height as the Accept pill so the row stays perfectly aligned, but
+ * with no fill, no border, and an underline that sits 3px below the
+ * baseline (text-underline-offset). Hard-coded brand color so this rule
+ * doesn't depend on --cc-btn-secondary-* (which have to stay sensible
+ * defaults for the preferences modal's two secondary pills). */
+#zappy-cookie-banner .zappy-cookie-banner__button--customize {
+  background-color: transparent !important;
+  color: #d94b3d !important;
+  border: none !important;
+  padding: 0 8px !important;
+  height: 32px !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  border-radius: 6px !important;
+}
+
+#zappy-cookie-banner .zappy-cookie-banner__button--customize:hover {
+  color: #c03224 !important;
+  background-color: transparent !important;
+}
+
+#zappy-cookie-banner .zappy-cookie-banner__close {
+  position: absolute !important;
+  top: 8px !important;
+  right: 12px !important;
+  width: 28px !important;
+  height: 28px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 999px !important;
+  color: var(--cc-secondary-color) !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+#zappy-cookie-banner .zappy-cookie-banner__close:hover {
+  background-color: rgba(0, 0, 0, 0.06) !important;
+  color: var(--cc-primary-color) !important;
+}
+#zappy-cookie-banner .zappy-cookie-banner__button:focus-visible,
+#zappy-cookie-banner .zappy-cookie-banner__close:focus-visible {
+  outline: 2px solid var(--cc-btn-primary-bg) !important;
+  outline-offset: 2px;
+}
+/* RTL: anchor the X to the top-LEFT and shift body padding accordingly. */
+[dir="rtl"] #zappy-cookie-banner {
+  padding: 10px 20px 10px 56px !important;
+}
+[dir="rtl"] #zappy-cookie-banner .zappy-cookie-banner__close {
+  right: auto !important;
+  left: 12px !important;
+}
+
+/* === Preferences modal — minimalist restyle ===
+ * The modal opens when "Customize" is clicked. It MUST render as a solid
+ * card — pre-fix it inherited the bar's translucent --cc-bg without the
+ * matching backdrop-filter, leaving the page footer visibly bleeding
+ * through the modal box, the title, the toggle rows, and the bottom
+ * button row. Solid white box + clean shadow + an explicit slightly
+ * darker scrim on the overlay restores proper modal hierarchy. */
+/* The scrim belongs on wrapper layers only. In vanilla-cookieconsent v3,
+ * .pm / #pm is the preferences card itself, so styling .pm as the dark
+ * overlay makes the card look transparent. */
+#cc-main .pm-wrapper,
+#cc--main .pm-wrapper,
+#cc-main .pm-wrapper.pm--box,
+#cc--main .pm-wrapper.pm--box {
+  background: rgba(0, 0, 0, 0.32) !important;
+}
+
+#cc-main #pm,
+#cc--main #pm,
+#cc-main .pm,
+#cc--main .pm,
+#cc-main .pm .pm__box,
+#cc--main .pm .pm__box,
+#cc-main .pm__box,
+#cc--main .pm__box {
+  background: var(--cc-modal-bg) !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(0, 0, 0, 0.06) !important;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.18) !important;
+}
+
+#cc-main .pm__header,
+#cc--main .pm__header,
+#cc-main .pm__body,
+#cc--main .pm__body,
+#cc-main .pm__footer,
+#cc--main .pm__footer,
+#cc-main .pm__section,
+#cc--main .pm__section {
+  background: var(--cc-modal-bg) !important;
+}
+
+#cc-main .pm__title,
+#cc--main .pm__title {
+  font-weight: 600 !important;
+  color: var(--cc-primary-color) !important;
+}
+
+#cc-main .pm__btn[data-role="accept-all"],
+#cc--main .pm__btn[data-role="accept-all"] {
+  background-color: var(--cc-btn-primary-bg) !important;
+  border-color: var(--cc-btn-primary-border) !important;
+  color: var(--cc-btn-primary-color) !important;
+  border-radius: 999px !important;
+}
+
+#cc-main .pm__btn[data-role="accept-all"]:hover,
+#cc--main .pm__btn[data-role="accept-all"]:hover {
+  background-color: var(--cc-btn-primary-hover-bg) !important;
+  border-color: var(--cc-btn-primary-hover-border) !important;
+}
+
+/* Secondary modal pills — "Accept Necessary" + "Save Preferences".
+ * Must be a visible solid fill (light grey on white card) so users can
+ * actually find them. Pre-fix these inherited --cc-btn-secondary-bg:
+ * transparent (used by the bar's Customize text link), making them
+ * invisible against the modal background. */
+#cc-main .pm__btn,
+#cc--main .pm__btn {
+  border-radius: 999px !important;
+}
+#cc-main .pm__btn[data-role="necessary"],
+#cc--main .pm__btn[data-role="necessary"],
+#cc-main .pm__btn[data-role="save"],
+#cc--main .pm__btn[data-role="save"] {
+  background-color: var(--cc-btn-secondary-bg) !important;
+  color: var(--cc-btn-secondary-color) !important;
+  border: 1px solid var(--cc-btn-secondary-border) !important;
+}
+#cc-main .pm__btn[data-role="necessary"]:hover,
+#cc--main .pm__btn[data-role="necessary"]:hover,
+#cc-main .pm__btn[data-role="save"]:hover,
+#cc--main .pm__btn[data-role="save"]:hover {
+  background-color: var(--cc-btn-secondary-hover-bg) !important;
+  color: var(--cc-btn-secondary-hover-color) !important;
+  border-color: var(--cc-btn-secondary-hover-border) !important;
+}
+
+/* Toggle thumbs in brand color when on */
+#cc-main .section__toggle:checked + .toggle__icon,
+#cc--main .section__toggle:checked + .toggle__icon,
+#cc-main .section__toggle:checked ~ .toggle__icon,
+#cc--main .section__toggle:checked ~ .toggle__icon {
+  background-color: var(--cc-toggle-on-bg) !important;
+}
+
+/* Mobile fallback: two rows (description on top, buttons below) */
+@media (max-width: 640px) {
+  #zappy-cookie-banner {
+    padding: 10px 14px !important;
+  }
+  #zappy-cookie-banner .zappy-cookie-banner__inner {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+  }
+  #zappy-cookie-banner .zappy-cookie-banner__text {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    height: auto !important;
+    min-height: 0 !important;
+    line-height: 1.4 !important;
+  }
+  #zappy-cookie-banner .zappy-cookie-banner__actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  #zappy-cookie-banner .zappy-cookie-banner__button--accept {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+}
+
+/* Cookie preferences button in legal footer keeps default behavior */
+.cookie-preferences-btn:hover {
+  text-decoration: none !important;
+}
+
+/* Accessibility Styles */
+
+/* Basic Accessibility Enhancements */
+:root {
+  --accessibility-focus: #1E1E1B;
+}
+
+/* Skip link styles */
+.skip-link:focus {
+  position: absolute !important;
+  top: 6px !important;
+  left: 6px !important;
+  background: #000 !important;
+  color: white !important;
+  padding: 8px !important;
+  text-decoration: none !important;
+  z-index: 10000 !important;
+  border-radius: 4px !important; transform: none; }
+
+/* Enhanced focus indicators */
+*:focus {
+  outline: 2px solid var(--accessibility-focus) !important;
+  outline-offset: 2px !important;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  * {
+    border-color: currentColor !important;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Screen reader only content */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Custom Accessibility Toolbar Styling - Zappy Style */
+
+/* Main button icon - ONLY target the floating button, not menu elements */
+#mic-access-tool-general-button {
+  background-color: transparent !important;
+  background: transparent !important;
+  border: none !important;
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  min-height: 32px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* AGGRESSIVELY hide all text in the button */
+#mic-access-tool-general-button,
+#mic-access-tool-general-button *:not(svg):not(path):not(circle):not(rect):not(polygon):not(ellipse):not(line):not(polyline):not(g) {
+  font-size: 0 !important;
+  color: transparent !important;
+  text-indent: -9999px !important;
+  line-height: 0 !important;
+  letter-spacing: -999em !important;
+  white-space: nowrap !important;
+}
+
+/* Hide text nodes specifically */
+
+/* Hover state - keep text hidden */
+#mic-access-tool-general-button:hover {
+  background-color: rgba(30, 30, 27, 0.1) !important;
+  background: rgba(30, 30, 27, 0.1) !important;
+  box-shadow: 0 2px 8px rgba(30, 30, 27, 0.2) !important;
+  font-size: 0 !important;
+  color: transparent !important;
+  text-indent: -9999px !important;
+}
+
+/* Target the SVG and make it the selected color */
+#mic-access-tool-general-button svg {
+  width: 18px !important;
+  height: 18px !important;
+  max-width: 18px !important;
+  max-height: 18px !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  margin: 0 !important;
+  /* Convert green to selected color using dynamic CSS filter */
+  filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%) !important;
+}
+
+/* Also directly target all SVG elements to be the selected color */
+#mic-access-tool-general-button svg,
+#mic-access-tool-general-button svg *,
+#mic-access-tool-general-button svg path,
+#mic-access-tool-general-button svg circle,
+#mic-access-tool-general-button svg rect,
+#mic-access-tool-general-button svg polygon,
+#mic-access-tool-general-button svg ellipse,
+#mic-access-tool-general-button svg line,
+#mic-access-tool-general-button svg polyline,
+#mic-access-tool-general-button svg g {
+  fill: #1E1E1B !important;
+  stroke: #1E1E1B !important;
+  color: #1E1E1B !important;
+}
+
+/* Target images if the icon is an img instead of SVG */
+#mic-access-tool-general-button img,
+#mic-access-tool-general-button i {
+  width: 18px !important;
+  height: 18px !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  /* Convert green to selected color using dynamic filter */
+  filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%) !important;
+}
+
+/* Menu header with selected color */
+#mic-access-tool-box .mic-access-tool-box-header,
+.mic-access-tool-box-header,
+div[id*="mic-access-tool-box"] header,
+div[id*="mic-access-tool-box"] .header {
+  background: #1E1E1B !important;
+  color: white !important;
+}
+
+/* Make header text white - title and close button */
+#mic-access-tool-box .mic-access-tool-box-header *,
+.mic-access-tool-box-header *,
+div[id*="mic-access-tool-box"] header *,
+div[id*="mic-access-tool-box"] .header * {
+  color: white !important;
+}
+
+/* Close button text */
+#mic-access-tool-box .mic-access-tool-box-header button,
+#mic-access-tool-box .mic-access-tool-box-header a,
+#mic-access-tool-box [class*="close"],
+#mic-access-tool-box button[title*="close"],
+#mic-access-tool-box button[title*="Close"] {
+  color: white !important;
+  background: transparent !important;
+}
+
+/* Active buttons and highlights in menu */
+#mic-access-tool-box button.active,
+#mic-access-tool-box button:hover,
+div[id*="mic-access-tool-box"] button.active,
+div[id*="mic-access-tool-box"] button:hover {
+  border-color: #1E1E1B !important;
+  color: #1E1E1B !important;
+  background-color: rgba(30, 30, 27, 0.1) !important;
+}
+
+/* Reset button */
+#mic-access-tool-box button[title*="reset"],
+#mic-access-tool-box button[title*="Reset"],
+#mic-access-tool-box [class*="reset"],
+div[id*="mic-access-tool-box"] button[class*="reset"] {
+  background: #1E1E1B !important;
+  color: white !important;
+}
+
+/* Reset button text and icon */
+#mic-access-tool-box button[title*="reset"] *,
+#mic-access-tool-box button[title*="Reset"] *,
+#mic-access-tool-box [class*="reset"] *,
+div[id*="mic-access-tool-box"] button[class*="reset"] * {
+  color: white !important;
+}
+
+/* Accessibility widget - displayed by default on both mobile and desktop */
+/* Position: opposite side from WhatsApp button (RTL sites → left, LTR sites → right) */
+#mic-access-tool-general-button,
+.mic-access-tool-general-button,
+#mic-init-access-tool .mic-access-tool-general-button,
+#mic-init-access-tool #mic-access-tool-general-button,
+._access-icon {
+  display: flex !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   V2 REGENERATED SECTION CSS (בית-hero)
+   Added: 2026-06-25T13:04:53.697Z
+   ═══════════════════════════════════════════════════════════ */
+.index-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1A1208;
+  overflow: hidden;
+  color: var(--text-light);
+  direction: rtl;
+}
+
+/* Background Image */
+.index-hero-section .hero-bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  z-index: 0;
+}
+
+/* Scrim Overlay */
+.index-hero-section .hero-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-image: linear-gradient(
+    180deg,
+    rgba(26, 18, 8, 0.48) 0%,
+    rgba(26, 18, 8, 0.32) 40%,
+    rgba(26, 18, 8, 0.52) 100%
+  );
+}
+
+/* Decorative Stamp Seal */
+.index-hero-section .hero-stamp-seal {
+  position: absolute;
+  top: 120px;
+  inset-inline-end: 40px;
+  width: 90px;
+  height: 90px;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.85;
+  transform: rotate(12deg);
+}
+
+.index-hero-section .hero-stamp-seal svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Content Container */
+.index-hero-section .hero-content-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 24px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Text Group */
+.index-hero-section .hero-text-group {
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.index-hero-section .hero-headline {font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--text-light);
+  margin: 0 0 20px 0;}
+
+.index-hero-section .hero-subtitle {
+  font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-light);
+  margin: 0;
+  max-width: 650px;
+  margin-inline: auto;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  opacity: 0.92;
+}
+
+/* CTA Group */
+.index-hero-section .hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Primary Button */
+.index-hero-section .btn-hero-primary {
+  display: inline-block;
+  background: var(--primary);
+  color: #FFFFFF;
+  padding: 14px 32px;
+  border-radius: 100px;
+  font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(192, 57, 43, 0.35);
+  border: none;
+  cursor: pointer;
+  text-shadow: none;
+}
+
+.index-hero-section .btn-hero-primary:hover {
+  background: #A8322A;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(192, 57, 43, 0.45);
+}
+
+/* Secondary Button */
+.index-hero-section .btn-hero-secondary {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--text-light);
+  padding: 14px 32px;
+  border-radius: 100px;
+  font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  text-shadow: none;
+}
+
+.index-hero-section .btn-hero-secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .index-hero-section {
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding-top: 100px;
+  }
+
+  .index-hero-section .hero-content-container {
+    padding: 100px 20px 40px;
+  }
+
+  .index-hero-section .hero-headline {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .index-hero-section .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .index-hero-section .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    max-width: 340px;
+    margin-inline: auto;
+    gap: 12px;
+  }
+
+  .index-hero-section .btn-hero-primary,
+  .index-hero-section .btn-hero-secondary {
+    width: 100%;
+    text-align: center;
+    padding: 14px 24px;
+  }
+
+  .index-hero-section .hero-stamp-seal {
+    top: 100px;
+    inset-inline-end: 16px;
+    width: 64px;
+    height: 64px;
+    opacity: 0.7;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .index-hero-section .hero-headline {
+    font-size: 2.6rem;
+  }
+  
+  .index-hero-section .hero-content-container {
+    padding: 140px 32px 80px;
+  }
+}
+/* ZAPPY_POSTGEN_GUARD_HERO_FONT_CAP:index-hero */
+.hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 48px !important; line-height: 1.2 !important; }
+@media (max-width: 1024px) {
+  .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 36px !important; }
+}
+@media (max-width: 768px) {
+  .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 28px !important; }
+}
+
+/* ZAPPY_POSTGEN_GUARD_HERO_TYPO:בית-hero (index-hero) — stripped 1 jarring hero headline effect(s) */
+
+/* === NAVBAR STYLE OVERRIDES START === */
+.navbar { background-color: transparent !important; background-image: linear-gradient(to bottom, rgba(255,255,255,var(--nav-overlay-opacity, 0)), transparent) !important; transition: background-color 0.3s ease, background-image 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease, box-shadow 0.3s ease !important; }
+.zappy-catalog-menu, #zappy-catalog-menu { background-image: linear-gradient(to bottom, rgba(255,255,255,var(--nav-overlay-opacity, 0)), transparent) !important; transition: background 0.3s ease, background-image 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease !important;}
+.navbar .nav-menu > li > a,
+.navbar .nav-menu > .nav-item > a,
+.navbar .nav-link,
+.navbar .navbar-nav .nav-link,
+.navbar a:not(.nav-cta-btn) { color: #1E1E1B !important; }
+.navbar .nav-menu > li > a:hover,
+.navbar .nav-menu > .nav-item > a:hover,
+.navbar .nav-link:hover,
+.navbar a:not(.nav-cta-btn):hover { color: #D94B3D !important; }
+.navbar .navbar-brand, .navbar .navbar-brand a { color: #1E1E1B !important; }
+.navbar .dropdown-toggle { color: #1E1E1B !important; }
+.navbar .dropdown-toggle:hover { color: #D94B3D !important; }
+.navbar .mobile-hamburger-btn, .navbar .mobile-close-btn { color: #1E1E1B !important; }
+.navbar-toggler { color: #1E1E1B !important; border-color: #1E1E1B44 !important; }
+.navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%231E1E1B' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; }
+.navbar .dropdown-menu { background-color: #1E1E1B !important; }
+.navbar .dropdown-menu li a,
+.navbar .dropdown-menu .dropdown-item { color: #1E1E1B !important; }
+.navbar .dropdown-menu li a:hover,
+.navbar .dropdown-menu .dropdown-item:hover { color: #D94B3D !important; background-color: rgba(128,128,128,0.1) !important; }
+.navbar .sub-menu,
+.navbar ul.sub-menu,
+nav.navbar .sub-menu { background-color: #1E1E1B !important; }
+.navbar .sub-menu a,
+.navbar .sub-menu li a,
+.navbar .nav-menu .sub-menu a,
+.navbar .nav-menu .sub-menu li a,
+.navbar .zappy-products-dropdown .sub-menu a,
+nav.navbar .sub-menu li a { color: #1E1E1B !important; }
+.navbar .sub-menu a:hover,
+.navbar .sub-menu li a:hover,
+nav.navbar .sub-menu li a:hover { color: #D94B3D !important; background-color: rgba(128,128,128,0.1) !important; }
+.navbar .mobile-submenu-toggle { color: #1E1E1B !important; }
+.navbar .phone-header-btn { color: #1E1E1B !important; }
+.navbar .nav-search-input,
+.navbar .nav-search-box .nav-search-input { color: #1E1E1B !important; }
+.navbar .nav-search-input::placeholder { color: var(--text-muted, rgba(128,128,128,0.6)) !important; }
+@media (min-width: 769px) {
+  .navbar .nav-search-box .nav-search-btn { color: #1E1E1B !important; }
+  .navbar .nav-search-box .nav-search-btn svg { stroke: #1E1E1B !important; fill: none !important; }
+}
+.navbar .nav-search-result-name { color: #1E1E1B !important; }
+.navbar .nav-search-result-item a { color: #1E1E1B !important; }
+.navbar .nav-search-result-price { color: var(--accent, var(--primary)) !important; }
+.navbar .nav-search-no-results,
+.navbar .search-no-results { color: var(--text-muted, rgba(128,128,128,0.6)) !important; }
+.zappy-catalog-menu, #zappy-catalog-menu { background: transparent !important; }
+.zappy-catalog-menu .catalog-menu-item,
+.zappy-catalog-menu .catalog-menu-all { color: #1E1E1B !important; }
+.zappy-catalog-menu .catalog-menu-item:hover,
+.zappy-catalog-menu .catalog-menu-all:hover { color: #D94B3D !important; background: rgba(128,128,128,0.1) !important; }
+.navbar .cart-link.nav-cart,
+.navbar .login-link.nav-login,
+.navbar .nav-search-toggle,
+.navbar .search-toggle { background: var(--bg-light, #ffffff) !important; color: #1E1E1B !important; }
+.navbar .cart-link.nav-cart:hover,
+.navbar .login-link.nav-login:hover,
+.navbar .nav-search-toggle:hover,
+.navbar .search-toggle:hover { background: rgba(128,128,128,0.15) !important; color: #1E1E1B !important; }
+.navbar .cart-link.nav-cart svg, .navbar .login-link.nav-login svg, .navbar .nav-search-toggle svg, .navbar .search-toggle svg { color: inherit !important; fill: none !important; stroke: currentColor !important; }
+
+@media (min-width: 769px) {
+  .navbar:not(.scrolled) .dropdown-menu { background-color: #1E1E1B !important; }
+  .navbar:not(.scrolled) .dropdown-menu li a,
+  .navbar:not(.scrolled) .dropdown-menu .dropdown-item { color: #FAF9F5 !important; }
+  .navbar:not(.scrolled) .dropdown-menu li a:hover,
+  .navbar:not(.scrolled) .dropdown-menu .dropdown-item:hover { color: var(--nav-text-hover, var(--accent)) !important; }
+  .navbar:not(.scrolled) .sub-menu { background-color: #1E1E1B !important; }
+  .navbar:not(.scrolled) .sub-menu a,
+  .navbar:not(.scrolled) .sub-menu li a,
+  .navbar:not(.scrolled) .nav-menu .sub-menu a,
+  .navbar:not(.scrolled) .zappy-products-dropdown .sub-menu a { color: #FAF9F5 !important; }
+  .navbar:not(.scrolled) .sub-menu a:hover,
+  .navbar:not(.scrolled) .sub-menu li a:hover { color: var(--nav-text-hover, var(--accent)) !important; }
+}
+.navbar.scrolled { background-color: rgba(250,249,245,0.85) !important; background-image: none !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; box-shadow: 0 2px 16px rgba(0,0,0,0.12) !important; }
+.navbar.scrolled::before, .navbar.scrolled::after { background: transparent !important; opacity: 0 !important; }
+.navbar.scrolled ~ .zappy-catalog-menu, .navbar.scrolled ~ #zappy-catalog-menu, .zappy-catalog-menu.scrolled, #zappy-catalog-menu.scrolled { background: rgba(250,249,245,0.85) !important; background-image: none !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; }
+.zappy-catalog-menu.scrolled .catalog-menu-item,
+.zappy-catalog-menu.scrolled .catalog-menu-all,
+#zappy-catalog-menu.scrolled .catalog-menu-item,
+#zappy-catalog-menu.scrolled .catalog-menu-all,
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-item,
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-all,
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-item,
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-all { color: var(--frosted-text, #1E1E1B) !important; }
+.zappy-catalog-menu.scrolled .catalog-menu-item:hover,
+.zappy-catalog-menu.scrolled .catalog-menu-all:hover,
+#zappy-catalog-menu.scrolled .catalog-menu-item:hover,
+#zappy-catalog-menu.scrolled .catalog-menu-all:hover,
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-item:hover,
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-all:hover,
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-item:hover,
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-all:hover { color: var(--nav-text-hover, var(--accent)) !important; }
+.navbar.scrolled .nav-menu > li > a,
+.navbar.scrolled .nav-menu > .nav-item > a,
+.navbar.scrolled .nav-link,
+.navbar.scrolled a:not(.nav-cta-btn) { color: var(--frosted-text, #1E1E1B) !important; }
+.navbar.scrolled .nav-menu > li > a:hover,
+.navbar.scrolled .nav-menu > .nav-item > a:hover,
+.navbar.scrolled .nav-link:hover,
+.navbar.scrolled a:not(.nav-cta-btn):hover { color: var(--nav-text-hover, var(--accent)) !important; }
+.navbar.scrolled .navbar-brand, .navbar.scrolled .navbar-brand a { color: var(--frosted-text, #1E1E1B) !important; }
+.navbar.scrolled .dropdown-toggle { color: var(--frosted-text, #1E1E1B) !important; }
+.navbar.scrolled .mobile-hamburger-btn, .navbar.scrolled .mobile-close-btn { color: var(--frosted-text, #1E1E1B) !important; }
+.navbar.scrolled .phone-header-btn { color: var(--frosted-text, #1E1E1B) !important; }
+.navbar.scrolled .mobile-toggle { color: var(--frosted-text, #1E1E1B) !important; }
+.navbar.scrolled .mobile-toggle svg { color: inherit !important; }
+.navbar.scrolled .mobile-toggle svg path { stroke: currentColor !important; }
+.navbar.scrolled .mobile-hamburger-btn svg,
+.navbar.scrolled .mobile-close-btn svg,
+.navbar.scrolled .phone-header-btn svg,
+.navbar.scrolled .navbar-brand svg,
+.navbar.scrolled .logo-link svg { color: inherit !important; stroke: currentColor !important; }
+.navbar.scrolled .mobile-hamburger-btn svg path,
+.navbar.scrolled .mobile-close-btn svg path,
+.navbar.scrolled .phone-header-btn svg path,
+.navbar.scrolled .navbar-brand svg path,
+.navbar.scrolled .logo-link svg path { stroke: currentColor !important; }
+.navbar.scrolled .nav-search-btn { color: var(--frosted-text, #1E1E1B) !important; }
+.navbar.scrolled .nav-search-btn svg { stroke: var(--frosted-text, #1E1E1B) !important; fill: none !important; }
+@media (min-width: 769px) {
+  .navbar.scrolled .sub-menu,
+  .navbar.scrolled ul.sub-menu,
+  nav.navbar.scrolled .sub-menu { background-color: var(--bg-light, #ffffff) !important; border-radius: 8px !important; box-shadow: 0 4px 20px rgba(0,0,0,0.15) !important; }
+  .navbar.scrolled .sub-menu a,
+  .navbar.scrolled .sub-menu li a,
+  .navbar.scrolled .nav-menu .sub-menu a,
+  .navbar.scrolled .nav-menu .sub-menu li a,
+  .navbar.scrolled .zappy-products-dropdown .sub-menu a,
+  nav.navbar.scrolled .sub-menu li a { color: #1E1E1B !important; }
+  .navbar.scrolled .sub-menu a:hover,
+  .navbar.scrolled .sub-menu li a:hover,
+  .navbar.scrolled .nav-menu .sub-menu a:hover,
+  nav.navbar.scrolled .sub-menu li a:hover { color: #D94B3D !important; background-color: rgba(128,128,128,0.1) !important; }
+  .navbar.scrolled .dropdown-menu { background-color: var(--bg-light, #ffffff) !important; }
+  .navbar.scrolled .dropdown-menu li a,
+  .navbar.scrolled .dropdown-menu .dropdown-item { color: #1E1E1B !important; }
+  .navbar.scrolled .dropdown-menu li a:hover,
+  .navbar.scrolled .dropdown-menu .dropdown-item:hover { color: #D94B3D !important; background-color: rgba(128,128,128,0.1) !important; }
+  .navbar.scrolled .mobile-submenu-toggle { color: #1E1E1B !important; }
+}
+
+.navbar.scrolled .cart-link.nav-cart,
+.navbar.scrolled .login-link.nav-login,
+.navbar.scrolled .nav-search-toggle,
+.navbar.scrolled .search-toggle { background: var(--bg-light, #ffffff) !important; color: #1E1E1B !important; }
+@media (max-width: 768px) {
+  .navbar { background-color: transparent !important; background-image: none !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; box-shadow: none !important; }
+  /* Kill backdrop-filter on EVERY navbar state at mobile (not just base .navbar).
+     A backdrop-filter makes the navbar the containing block for fixed-positioned
+     descendants, so the fixed mobile menu's top/bottom resolve against the ~70px
+     navbar instead of the viewport and the open menu collapses to a sliver on
+     scrolled (non-home) pages. The scrolled selector must out-specify the
+     generated ".navbar.scrolled { backdrop-filter: ... !important }" rule. The
+     mobile navbar background is solid, so the blur is purely decorative here. */
+  .navbar.scrolled, nav.navbar.scrolled, .navbar.active, .navbar.open, .navbar.show, .navbar.menu-open, .zappy-catalog-menu, #zappy-catalog-menu, .zappy-catalog-menu.scrolled, #zappy-catalog-menu.scrolled { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+  .zappy-catalog-menu, #zappy-catalog-menu { background-image: none !important; }
+  .navbar::before, .navbar::after { background: transparent !important; opacity: 0 !important; }
+  body.menu-open .navbar, body.nav-open .navbar, body.mobile-menu-open .navbar, .navbar.scrolled, .navbar.active, .navbar.open, .navbar.show, .navbar.menu-open, .navbar:has(.nav-menu.active), .navbar:has(#navMenu.active), .navbar:has(.mobile-menu.active), .navbar:has(.mobile-toggle.active), .navbar:has(#mobileToggle.active) { background-color: #1E1E1B !important; }
+  .nav-menu, .nav-menu.active, .nav-menu.nav-menu-active, #navMenu, #navMenu.active, .mobile-menu, .mobile-menu.active, .mobile-nav, .mobile-nav.active { background-color: #1E1E1B !important; background: #1E1E1B !important; }
+  .nav-menu.active, .nav-menu.nav-menu-active, #navMenu.active, .mobile-menu.active, .mobile-nav.active { height: calc(100dvh - 70px) !important; max-height: calc(100dvh - 70px) !important; overflow-y: auto !important; }
+  .nav-menu a, .nav-menu > li > a, #navMenu a, #navMenu > li > a { color: #FAF9F5 !important; }
+  .nav-menu a:hover, .nav-menu > li > a:hover { color: #D94B3D !important; }
+  .nav-menu .dropdown-menu { background: rgba(128,128,128,0.06) !important; }
+  .nav-menu .dropdown-menu a, .nav-menu .dropdown-menu li a { color: #FAF9F5 !important; }
+  .nav-menu .dropdown-menu a:hover { color: #D94B3D !important; }
+  .nav-menu .sub-menu a { color: #FAF9F5 !important; white-space: normal !important; }
+  .nav-menu .sub-menu a:hover { color: #D94B3D !important; }
+  .nav-menu > li { position: relative !important; }
+  .navbar .nav-menu .mobile-submenu-toggle { color: #FAF9F5 !important; position: static !important; height: auto !important; flex-shrink: 0 !important; align-self: stretch !important; }
+  .mobile-toggle { color: #1E1E1B !important; }
+  .mobile-toggle svg { color: inherit !important; }
+  .mobile-toggle svg path { stroke: currentColor !important; }
+  
+  /* When menu is open or navbar is scrolled in mobile, the background is dropdownBg, so text should be mobileMenuText */
+  .navbar.scrolled .mobile-toggle, .navbar.scrolled .mobile-hamburger-btn, .navbar.scrolled .mobile-close-btn,
+  .navbar.scrolled .navbar-brand, .navbar.scrolled .dropdown-toggle, .navbar.scrolled .phone-header-btn,
+  body.menu-open .navbar .mobile-toggle, body.nav-open .navbar .mobile-toggle, body.mobile-menu-open .navbar .mobile-toggle,
+  .navbar.active .mobile-toggle, .navbar.open .mobile-toggle, .navbar.show .mobile-toggle, .navbar.menu-open .mobile-toggle,
+  .navbar:has(.nav-menu.active) .mobile-toggle, .navbar:has(#navMenu.active) .mobile-toggle, .navbar:has(.mobile-menu.active) .mobile-toggle, .navbar:has(.mobile-toggle.active) .mobile-toggle,
+  body.menu-open .navbar .navbar-brand, body.nav-open .navbar .navbar-brand, body.mobile-menu-open .navbar .navbar-brand,
+  .navbar.active .navbar-brand, .navbar.open .navbar-brand, .navbar.show .navbar-brand, .navbar.menu-open .navbar-brand,
+  .navbar:has(.nav-menu.active) .navbar-brand, .navbar:has(#navMenu.active) .navbar-brand, .navbar:has(.mobile-menu.active) .navbar-brand, .navbar:has(.mobile-toggle.active) .navbar-brand,
+  body.menu-open .navbar .phone-header-btn, body.nav-open .navbar .phone-header-btn, body.mobile-menu-open .navbar .phone-header-btn,
+  .navbar.active .phone-header-btn, .navbar.open .phone-header-btn, .navbar.show .phone-header-btn, .navbar.menu-open .phone-header-btn,
+  .navbar:has(.nav-menu.active) .phone-header-btn, .navbar:has(#navMenu.active) .phone-header-btn, .navbar:has(.mobile-menu.active) .phone-header-btn, .navbar:has(.mobile-toggle.active) .phone-header-btn {
+    color: #FAF9F5 !important;
+  }
+  .navbar.scrolled .mobile-toggle svg, .navbar.scrolled .mobile-hamburger-btn svg, .navbar.scrolled .mobile-close-btn svg,
+  .navbar.scrolled .navbar-brand svg, .navbar.scrolled .dropdown-toggle svg, .navbar.scrolled .phone-header-btn svg,
+  body.menu-open .navbar .mobile-toggle svg, body.nav-open .navbar .mobile-toggle svg, body.mobile-menu-open .navbar .mobile-toggle svg,
+  .navbar.active .mobile-toggle svg, .navbar.open .mobile-toggle svg, .navbar.show .mobile-toggle svg, .navbar.menu-open .mobile-toggle svg,
+  .navbar:has(.nav-menu.active) .mobile-toggle svg, .navbar:has(#navMenu.active) .mobile-toggle svg, .navbar:has(.mobile-menu.active) .mobile-toggle svg, .navbar:has(.mobile-toggle.active) .mobile-toggle svg,
+  body.menu-open .navbar .phone-header-btn svg, body.nav-open .navbar .phone-header-btn svg, body.mobile-menu-open .navbar .phone-header-btn svg,
+  .navbar.active .phone-header-btn svg, .navbar.open .phone-header-btn svg, .navbar.show .phone-header-btn svg, .navbar.menu-open .phone-header-btn svg,
+  .navbar:has(.nav-menu.active) .phone-header-btn svg, .navbar:has(#navMenu.active) .phone-header-btn svg, .navbar:has(.mobile-menu.active) .phone-header-btn svg, .navbar:has(.mobile-toggle.active) .phone-header-btn svg,
+  body.menu-open .navbar .navbar-brand svg, body.nav-open .navbar .navbar-brand svg, body.mobile-menu-open .navbar .navbar-brand svg,
+  .navbar.active .navbar-brand svg, .navbar.open .navbar-brand svg, .navbar.show .navbar-brand svg, .navbar.menu-open .navbar-brand svg,
+  .navbar:has(.nav-menu.active) .navbar-brand svg, .navbar:has(#navMenu.active) .navbar-brand svg, .navbar:has(.mobile-menu.active) .navbar-brand svg, .navbar:has(.mobile-toggle.active) .navbar-brand svg {
+    color: #FAF9F5 !important;
+    stroke: currentColor !important;
+  }
+  .navbar.scrolled .mobile-toggle svg path, .navbar.scrolled .mobile-hamburger-btn svg path, .navbar.scrolled .mobile-close-btn svg path,
+  .navbar.scrolled .navbar-brand svg path, .navbar.scrolled .dropdown-toggle svg path, .navbar.scrolled .phone-header-btn svg path,
+  body.menu-open .navbar .mobile-toggle svg path, body.nav-open .navbar .mobile-toggle svg path, body.mobile-menu-open .navbar .mobile-toggle svg path,
+  .navbar.active .mobile-toggle svg path, .navbar.open .mobile-toggle svg path, .navbar.show .mobile-toggle svg path, .navbar.menu-open .mobile-toggle svg path,
+  .navbar:has(.nav-menu.active) .mobile-toggle svg path, .navbar:has(#navMenu.active) .mobile-toggle svg path, .navbar:has(.mobile-menu.active) .mobile-toggle svg path, .navbar:has(.mobile-toggle.active) .mobile-toggle svg path,
+  body.menu-open .navbar .phone-header-btn svg path, body.nav-open .navbar .phone-header-btn svg path, body.mobile-menu-open .navbar .phone-header-btn svg path,
+  .navbar.active .phone-header-btn svg path, .navbar.open .phone-header-btn svg path, .navbar.show .phone-header-btn svg path, .navbar.menu-open .phone-header-btn svg path,
+  .navbar:has(.nav-menu.active) .phone-header-btn svg path, .navbar:has(#navMenu.active) .phone-header-btn svg path, .navbar:has(.mobile-menu.active) .phone-header-btn svg path, .navbar:has(.mobile-toggle.active) .phone-header-btn svg path,
+  body.menu-open .navbar .navbar-brand svg path, body.nav-open .navbar .navbar-brand svg path, body.mobile-menu-open .navbar .navbar-brand svg path,
+  .navbar.active .navbar-brand svg path, .navbar.open .navbar-brand svg path, .navbar.show .navbar-brand svg path, .navbar.menu-open .navbar-brand svg path,
+  .navbar:has(.nav-menu.active) .navbar-brand svg path, .navbar:has(#navMenu.active) .navbar-brand svg path, .navbar:has(.mobile-menu.active) .navbar-brand svg path, .navbar:has(.mobile-toggle.active) .navbar-brand svg path {
+    stroke: currentColor !important;
+  }
+  
+  .navbar.scrolled .mobile-toggle svg { color: inherit !important; }
+  .navbar.scrolled .mobile-toggle svg path { stroke: currentColor !important; }
+  
+  .navbar.scrolled .nav-menu > li > a,
+  .navbar.scrolled .nav-menu > .nav-item > a,
+  .navbar.scrolled .nav-link,
+  .navbar.scrolled a:not(.nav-cta-btn) { color: #FAF9F5 !important; }
+  .cart-link.nav-cart,
+  .login-link.nav-login,
+  .nav-search-toggle,
+  .search-toggle { background: var(--bg-light, #ffffff) !important; color: #1E1E1B !important; }
+  .cart-link.nav-cart svg,
+  .login-link.nav-login svg,
+  .nav-search-toggle svg,
+  .search-toggle svg { stroke: #1E1E1B !important; color: #1E1E1B !important; }
+  .mobile-search-panel { color: #FAF9F5 !important; }
+  .mobile-search-panel input { color: #FAF9F5 !important; background: rgba(255,255,255,0.12) !important; }
+  .mobile-search-panel .close-search { color: #FAF9F5 !important; background: rgba(255,255,255,0.15) !important; }
+  .mobile-search-panel .close-search svg { stroke: #FAF9F5 !important; color: #FAF9F5 !important; }
+  .mobile-search-panel .close-search:hover { color: #FAF9F5 !important; background: rgba(255,255,255,0.25) !important; }
+  .mobile-search-panel .close-search:hover svg { stroke: #FAF9F5 !important; color: #FAF9F5 !important; }
+  .navbar .zappy-products-dropdown .sub-menu,
+  .navbar .zappy-products-dropdown > .sub-menu {
+    display: none !important; position: static !important; max-height: 0 !important;
+    overflow: hidden !important; opacity: 0 !important; visibility: hidden !important;
+    pointer-events: none !important; box-shadow: none !important; border: none !important;
+    padding: 0 !important; transform: none !important;
+  }
+  .navbar .zappy-products-dropdown:hover .sub-menu,
+  .navbar .zappy-products-dropdown:hover > .sub-menu,
+  .navbar .zappy-products-dropdown:focus-within .sub-menu,
+  .navbar .zappy-products-dropdown:focus-within > .sub-menu,
+  .navbar .menu-item-has-children:hover > .sub-menu,
+  .navbar .nav-dropdown:hover > .dropdown-menu {
+    display: none !important; opacity: 0 !important; visibility: hidden !important;
+    max-height: 0 !important; pointer-events: none !important;
+  }
+  .navbar .zappy-products-dropdown.open .sub-menu,
+  .navbar .zappy-products-dropdown.open > .sub-menu,
+  .navbar .zappy-products-dropdown .sub-menu.mobile-expanded,
+  .navbar .zappy-products-dropdown > .sub-menu.mobile-expanded,
+  .navbar .menu-item-has-children.open > .sub-menu,
+  .navbar .menu-item-has-children > .sub-menu.mobile-expanded,
+  .navbar .nav-dropdown.open > .dropdown-menu {
+    display: block !important; opacity: 1 !important; visibility: visible !important;
+    max-height: none !important; pointer-events: auto !important; position: static !important;
+    overflow-y: visible !important; padding: 0.5rem 0 !important;
+  }
+}
+/* === NAVBAR STYLE OVERRIDES END === */
+
+
+
+
+
 /* ==ZAPPY V2 E-COMMERCE THEME CSS== */
 /* ═══════════════════════════════════════════════════════════════════════════ */
 /* V2 E-COMMERCE CSS - Clean V2 Variables Only                                  */
@@ -8186,7 +9318,7 @@ html[lang="ar"] .mobile-search-panel .search-wrapper,
   .nav-menu.nav-menu-active,
   #navMenu,
   #navMenu.active {
-    background-color: var(--nav-bg, var(--bg-light));
+    background-color: var(--bg-light);
   }
   /* Kill backdrop-filter on EVERY navbar state at mobile. backdrop-filter
      (and -webkit- prefix) establishes a CSS containing block, which makes the
@@ -8698,7 +9830,24 @@ body.zappy-focused-page .zappy-announcement-bar {
   visibility: hidden !important;
 }
 
-/* Hide cookie consent while cart drawer is open; reappears when drawer closes if still needed *//* Checkout focus: hide cookie bar so it does not compete with payment UI *//* Checkout focus: minimal navbar (logo + cart) and compact footer */
+/* Hide cookie consent while cart drawer is open; reappears when drawer closes if still needed */
+body.zappy-cart-open #cc-main,
+body.zappy-cart-open #zappy-cookie-banner {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Checkout focus: hide cookie bar so it does not compete with payment UI */
+body.zappy-checkout-page #zappy-cookie-banner {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Checkout focus: minimal navbar (logo + cart) and compact footer */
 body.zappy-checkout-page nav.navbar:not(.zappy-catalog-menu) .nav-menu,
 body.zappy-checkout-page nav.navbar:not(.zappy-catalog-menu) .nav-links,
 body.zappy-checkout-page nav.navbar:not(.zappy-catalog-menu) .nav-cta,
@@ -9928,1132 +11077,6 @@ main,
 }
 
 /* ==END ZAPPY V2 E-COMMERCE THEME CSS== */
-
-/* Legal Pages Content Styles */
-
-/* Legal Pages Content Styles */
-.legal-page-content {
-  padding: 120px 0 60px;
-  min-height: 60vh;
-  color: inherit;
-}
-
-.legal-page-content .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.legal-page-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: inherit;
-}
-
-.legal-page-content .last-updated {
-  color: #666;
-  margin-bottom: 2rem;
-  font-style: italic;
-}
-
-.legal-page-content h2 {
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: inherit;
-}
-
-.legal-page-content p {
-  margin-bottom: 1rem;
-  line-height: 1.7;
-}
-
-.legal-page-content ul {
-  margin-bottom: 1.5rem;
-  padding-left: 1.5rem;
-}
-
-[dir="rtl"] .legal-page-content ul {
-  padding-left: 0;
-  padding-right: 1.5rem;
-}
-
-.legal-page-content li {
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
-}
-
-.legal-page-content .contact-box,
-.legal-page-content .contact-info {
-  background: rgba(0, 0, 0, 0.03);
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin-top: 1.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-.legal-page-content .contact-box a,
-.legal-page-content .contact-info a {
-  color: inherit;
-  text-decoration: underline;
-}
-
-.legal-page-content .contact-box a:hover,
-.legal-page-content .contact-info a:hover {
-  opacity: 0.8;
-}
-
-.legal-page-content .important-notice,
-.legal-page-content .legal-reference {
-  background: rgba(0, 0, 0, 0.03);
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  margin: 1.5rem 0;
-  border-left: 4px solid currentColor;
-}
-
-[dir="rtl"] .legal-page-content .important-notice,
-[dir="rtl"] .legal-page-content .legal-reference {
-  border-left: none;
-  border-right: 4px solid currentColor;
-}
-
-/* Cookie Consent Styles */
-
-/* Cookie Consent Customizations ccCssV13 */
-:root {
-  /* --cc-bg has to STAY translucent (with the matching backdrop-filter on
-   * the bar below) so the slim bar reads as a frosted overlay rather than
-   * a solid horizontal stripe slapped on top of the page. The preferences
-   * modal — which doesn't use backdrop-filter — overrides this to a solid
-   * white below so it doesn't render see-through against the page. */
-  --cc-bg: rgba(255, 255, 255, 0.96);
-  --cc-modal-bg: #ffffff;
-  --cc-primary-color: #1f2937;
-  --cc-secondary-color: #4b5563;
-  --cc-btn-primary-bg: #d94b3d;
-  --cc-btn-primary-color: #ffffff;
-  --cc-btn-primary-border: #d94b3d;
-  --cc-btn-primary-hover-bg: #c03224;
-  --cc-btn-primary-hover-border: #c03224;
-  --cc-btn-primary-hover-color: #ffffff;
-  /* --cc-btn-secondary-* are used by BOTH the bar's "Customize" link and
-   * the preferences modal's "Accept Necessary" / "Save Preferences" pills.
-   * We keep the token defaults sensible (light grey fill, dark text) so
-   * the preferences-modal buttons stay visible, then override only
-   * .zappy-cookie-banner__button--customize directly to render the
-   * Customize link as a transparent underlined text. */
-  --cc-btn-secondary-bg: #f3f4f6;
-  --cc-btn-secondary-color: #1f2937;
-  --cc-btn-secondary-border: #e5e7eb;
-  --cc-btn-secondary-hover-bg: #e5e7eb;
-  --cc-btn-secondary-hover-color: #111827;
-  --cc-btn-secondary-hover-border: #d1d5db;
-  --cc-toggle-on-bg: #d94b3d;
-}
-
-#cc-main,
-#cc--main {
-  font-family: inherit !important;
-  color: var(--cc-primary-color);
-}
-
-/* === Zappy-owned slim bottom bar ===
- * Single-row inline layout: [description text] ......... [Customize] [Accept]
- * The banner is our DOM (#zappy-cookie-banner), not the library's #cm
- * consent modal. That avoids vanilla-cookieconsent's internal
- * <button><span>Label</span></button> structure entirely.
- */
-#zappy-cookie-banner {
-  position: fixed !important;
-  inset: auto 0 0 0 !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 10px 56px 10px 20px !important;
-  background: var(--cc-bg) !important;
-  -webkit-backdrop-filter: saturate(180%) blur(12px);
-  backdrop-filter: saturate(180%) blur(12px);
-  border: none !important;
-  border-top: 1px solid rgba(217, 75, 61, 0.18) !important;
-  border-radius: 0 !important;
-  box-shadow: 0 -1px 12px rgba(0, 0, 0, 0.04) !important;
-  display: flex !important;
-  align-items: center !important;
-  min-height: 52px !important;
-  font-size: 13px !important;
-  line-height: 1.4 !important;
-  z-index: 2147483646;
-}
-
-#zappy-cookie-banner .zappy-cookie-banner__inner {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  flex-wrap: nowrap !important;
-  gap: 16px !important;
-  max-width: 1200px;
-  width: 100% !important;
-  margin: 0 auto;
-  padding: 0 !important;
-  min-height: 32px !important;
-}
-
-#zappy-cookie-banner .zappy-cookie-banner__text {
-  flex: 1 1 auto;
-  min-width: 0;
-  padding: 0 !important;
-  margin: 0 !important;
-  display: block !important;
-  font-size: 13px !important;
-  font-weight: 400 !important;
-  color: var(--cc-primary-color) !important;
-  height: 32px !important;
-  min-height: 32px !important;
-  line-height: 32px !important;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-#zappy-cookie-banner .zappy-cookie-banner__actions {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  gap: 8px !important;
-  flex: 0 0 auto;
-  border: none !important;
-  padding: 0 !important;
-  background: transparent !important;
-}
-
-#zappy-cookie-banner .zappy-cookie-banner__button {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  font-size: 13px !important;
-  font-weight: 500 !important;
-  padding: 0 16px !important;
-  height: 32px !important;
-  min-height: 0 !important;
-  line-height: 1 !important;
-  border-radius: 999px !important;
-  transition: background-color 0.15s ease, color 0.15s ease;
-  cursor: pointer;
-}
-
-/* Primary "Accept" — filled pill in site primary color */
-#zappy-cookie-banner .zappy-cookie-banner__button--accept {
-  background-color: var(--cc-btn-primary-bg) !important;
-  color: var(--cc-btn-primary-color) !important;
-  border: 1px solid var(--cc-btn-primary-border) !important;
-}
-
-#zappy-cookie-banner .zappy-cookie-banner__button--accept:hover {
-  background-color: var(--cc-btn-primary-hover-bg) !important;
-  border-color: var(--cc-btn-primary-hover-border) !important;
-}
-
-/* Secondary "Customize" — borderless underlined text link.
- * Same height as the Accept pill so the row stays perfectly aligned, but
- * with no fill, no border, and an underline that sits 3px below the
- * baseline (text-underline-offset). Hard-coded brand color so this rule
- * doesn't depend on --cc-btn-secondary-* (which have to stay sensible
- * defaults for the preferences modal's two secondary pills). */
-#zappy-cookie-banner .zappy-cookie-banner__button--customize {
-  background-color: transparent !important;
-  color: #d94b3d !important;
-  border: none !important;
-  padding: 0 8px !important;
-  height: 32px !important;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  border-radius: 6px !important;
-}
-
-#zappy-cookie-banner .zappy-cookie-banner__button--customize:hover {
-  color: #c03224 !important;
-  background-color: transparent !important;
-}
-
-#zappy-cookie-banner .zappy-cookie-banner__close {
-  position: absolute !important;
-  top: 8px !important;
-  right: 12px !important;
-  width: 28px !important;
-  height: 28px !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  background: transparent !important;
-  border: none !important;
-  border-radius: 999px !important;
-  color: var(--cc-secondary-color) !important;
-  font-size: 20px !important;
-  font-weight: 400 !important;
-  line-height: 1 !important;
-  cursor: pointer;
-  transition: background-color 0.15s ease, color 0.15s ease;
-}
-#zappy-cookie-banner .zappy-cookie-banner__close:hover {
-  background-color: rgba(0, 0, 0, 0.06) !important;
-  color: var(--cc-primary-color) !important;
-}
-#zappy-cookie-banner .zappy-cookie-banner__button:focus-visible,
-#zappy-cookie-banner .zappy-cookie-banner__close:focus-visible {
-  outline: 2px solid var(--cc-btn-primary-bg) !important;
-  outline-offset: 2px;
-}
-/* RTL: anchor the X to the top-LEFT and shift body padding accordingly. */
-[dir="rtl"] #zappy-cookie-banner {
-  padding: 10px 20px 10px 56px !important;
-}
-[dir="rtl"] #zappy-cookie-banner .zappy-cookie-banner__close {
-  right: auto !important;
-  left: 12px !important;
-}
-
-/* === Preferences modal — minimalist restyle ===
- * The modal opens when "Customize" is clicked. It MUST render as a solid
- * card — pre-fix it inherited the bar's translucent --cc-bg without the
- * matching backdrop-filter, leaving the page footer visibly bleeding
- * through the modal box, the title, the toggle rows, and the bottom
- * button row. Solid white box + clean shadow + an explicit slightly
- * darker scrim on the overlay restores proper modal hierarchy. */
-/* The scrim belongs on wrapper layers only. In vanilla-cookieconsent v3,
- * .pm / #pm is the preferences card itself, so styling .pm as the dark
- * overlay makes the card look transparent. */
-#cc-main .pm-wrapper,
-#cc--main .pm-wrapper,
-#cc-main .pm-wrapper.pm--box,
-#cc--main .pm-wrapper.pm--box {
-  background: rgba(0, 0, 0, 0.32) !important;
-}
-
-#cc-main #pm,
-#cc--main #pm,
-#cc-main .pm,
-#cc--main .pm,
-#cc-main .pm .pm__box,
-#cc--main .pm .pm__box,
-#cc-main .pm__box,
-#cc--main .pm__box {
-  background: var(--cc-modal-bg) !important;
-  -webkit-backdrop-filter: none !important;
-  backdrop-filter: none !important;
-  border-radius: 14px !important;
-  border: 1px solid rgba(0, 0, 0, 0.06) !important;
-  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.18) !important;
-}
-
-#cc-main .pm__header,
-#cc--main .pm__header,
-#cc-main .pm__body,
-#cc--main .pm__body,
-#cc-main .pm__footer,
-#cc--main .pm__footer,
-#cc-main .pm__section,
-#cc--main .pm__section {
-  background: var(--cc-modal-bg) !important;
-}
-
-#cc-main .pm__title,
-#cc--main .pm__title {
-  font-weight: 600 !important;
-  color: var(--cc-primary-color) !important;
-}
-
-#cc-main .pm__btn[data-role="accept-all"],
-#cc--main .pm__btn[data-role="accept-all"] {
-  background-color: var(--cc-btn-primary-bg) !important;
-  border-color: var(--cc-btn-primary-border) !important;
-  color: var(--cc-btn-primary-color) !important;
-  border-radius: 999px !important;
-}
-
-#cc-main .pm__btn[data-role="accept-all"]:hover,
-#cc--main .pm__btn[data-role="accept-all"]:hover {
-  background-color: var(--cc-btn-primary-hover-bg) !important;
-  border-color: var(--cc-btn-primary-hover-border) !important;
-}
-
-/* Secondary modal pills — "Accept Necessary" + "Save Preferences".
- * Must be a visible solid fill (light grey on white card) so users can
- * actually find them. Pre-fix these inherited --cc-btn-secondary-bg:
- * transparent (used by the bar's Customize text link), making them
- * invisible against the modal background. */
-#cc-main .pm__btn,
-#cc--main .pm__btn {
-  border-radius: 999px !important;
-}
-#cc-main .pm__btn[data-role="necessary"],
-#cc--main .pm__btn[data-role="necessary"],
-#cc-main .pm__btn[data-role="save"],
-#cc--main .pm__btn[data-role="save"] {
-  background-color: var(--cc-btn-secondary-bg) !important;
-  color: var(--cc-btn-secondary-color) !important;
-  border: 1px solid var(--cc-btn-secondary-border) !important;
-}
-#cc-main .pm__btn[data-role="necessary"]:hover,
-#cc--main .pm__btn[data-role="necessary"]:hover,
-#cc-main .pm__btn[data-role="save"]:hover,
-#cc--main .pm__btn[data-role="save"]:hover {
-  background-color: var(--cc-btn-secondary-hover-bg) !important;
-  color: var(--cc-btn-secondary-hover-color) !important;
-  border-color: var(--cc-btn-secondary-hover-border) !important;
-}
-
-/* Toggle thumbs in brand color when on */
-#cc-main .section__toggle:checked + .toggle__icon,
-#cc--main .section__toggle:checked + .toggle__icon,
-#cc-main .section__toggle:checked ~ .toggle__icon,
-#cc--main .section__toggle:checked ~ .toggle__icon {
-  background-color: var(--cc-toggle-on-bg) !important;
-}
-
-/* Mobile fallback: two rows (description on top, buttons below) */
-@media (max-width: 640px) {
-  #zappy-cookie-banner {
-    padding: 10px 14px !important;
-  }
-  #zappy-cookie-banner .zappy-cookie-banner__inner {
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 8px !important;
-  }
-  #zappy-cookie-banner .zappy-cookie-banner__text {
-    white-space: normal;
-    overflow: visible;
-    text-overflow: clip;
-    height: auto !important;
-    min-height: 0 !important;
-    line-height: 1.4 !important;
-  }
-  #zappy-cookie-banner .zappy-cookie-banner__actions {
-    width: 100%;
-    justify-content: space-between;
-  }
-  #zappy-cookie-banner .zappy-cookie-banner__button--accept {
-    flex: 1 1 auto;
-    text-align: center;
-  }
-}
-
-/* Cookie preferences button in legal footer keeps default behavior */
-.cookie-preferences-btn:hover {
-  text-decoration: none !important;
-}
-
-/* Accessibility Styles */
-
-/* Basic Accessibility Enhancements */
-:root {
-  --accessibility-focus: #1E1E1B;
-}
-
-/* Skip link styles */
-.skip-link:focus {
-  position: absolute !important;
-  top: 6px !important;
-  left: 6px !important;
-  background: #000 !important;
-  color: white !important;
-  padding: 8px !important;
-  text-decoration: none !important;
-  z-index: 10000 !important;
-  border-radius: 4px !important; transform: none; }
-
-/* Enhanced focus indicators */
-*:focus {
-  outline: 2px solid var(--accessibility-focus) !important;
-  outline-offset: 2px !important;
-}
-
-/* High contrast mode support */
-@media (prefers-contrast: high) {
-  * {
-    border-color: currentColor !important;
-  }
-}
-
-/* Reduced motion support */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-/* Screen reader only content */
-.sr-only {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
-
-/* Custom Accessibility Toolbar Styling - Zappy Style */
-
-/* Main button icon - ONLY target the floating button, not menu elements */
-#mic-access-tool-general-button {
-  background-color: transparent !important;
-  background: transparent !important;
-  border: none !important;
-  width: 32px !important;
-  height: 32px !important;
-  min-width: 32px !important;
-  min-height: 32px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 0 !important;
-  line-height: 0 !important;
-  position: relative !important;
-  overflow: hidden !important;
-}
-
-/* AGGRESSIVELY hide all text in the button */
-#mic-access-tool-general-button,
-#mic-access-tool-general-button *:not(svg):not(path):not(circle):not(rect):not(polygon):not(ellipse):not(line):not(polyline):not(g) {
-  font-size: 0 !important;
-  color: transparent !important;
-  text-indent: -9999px !important;
-  line-height: 0 !important;
-  letter-spacing: -999em !important;
-  white-space: nowrap !important;
-}
-
-/* Hide text nodes specifically */
-
-/* Hover state - keep text hidden */
-#mic-access-tool-general-button:hover {
-  background-color: rgba(30, 30, 27, 0.1) !important;
-  background: rgba(30, 30, 27, 0.1) !important;
-  box-shadow: 0 2px 8px rgba(30, 30, 27, 0.2) !important;
-  font-size: 0 !important;
-  color: transparent !important;
-  text-indent: -9999px !important;
-}
-
-/* Target the SVG and make it the selected color */
-#mic-access-tool-general-button svg {
-  width: 18px !important;
-  height: 18px !important;
-  max-width: 18px !important;
-  max-height: 18px !important;
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  margin: 0 !important;
-  /* Convert green to selected color using dynamic CSS filter */
-  filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%) !important;
-}
-
-/* Also directly target all SVG elements to be the selected color */
-#mic-access-tool-general-button svg,
-#mic-access-tool-general-button svg *,
-#mic-access-tool-general-button svg path,
-#mic-access-tool-general-button svg circle,
-#mic-access-tool-general-button svg rect,
-#mic-access-tool-general-button svg polygon,
-#mic-access-tool-general-button svg ellipse,
-#mic-access-tool-general-button svg line,
-#mic-access-tool-general-button svg polyline,
-#mic-access-tool-general-button svg g {
-  fill: #1E1E1B !important;
-  stroke: #1E1E1B !important;
-  color: #1E1E1B !important;
-}
-
-/* Target images if the icon is an img instead of SVG */
-#mic-access-tool-general-button img,
-#mic-access-tool-general-button i {
-  width: 18px !important;
-  height: 18px !important;
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  /* Convert green to selected color using dynamic filter */
-  filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%) !important;
-}
-
-/* Menu header with selected color */
-#mic-access-tool-box .mic-access-tool-box-header,
-.mic-access-tool-box-header,
-div[id*="mic-access-tool-box"] header,
-div[id*="mic-access-tool-box"] .header {
-  background: #1E1E1B !important;
-  color: white !important;
-}
-
-/* Make header text white - title and close button */
-#mic-access-tool-box .mic-access-tool-box-header *,
-.mic-access-tool-box-header *,
-div[id*="mic-access-tool-box"] header *,
-div[id*="mic-access-tool-box"] .header * {
-  color: white !important;
-}
-
-/* Close button text */
-#mic-access-tool-box .mic-access-tool-box-header button,
-#mic-access-tool-box .mic-access-tool-box-header a,
-#mic-access-tool-box [class*="close"],
-#mic-access-tool-box button[title*="close"],
-#mic-access-tool-box button[title*="Close"] {
-  color: white !important;
-  background: transparent !important;
-}
-
-/* Active buttons and highlights in menu */
-#mic-access-tool-box button.active,
-#mic-access-tool-box button:hover,
-div[id*="mic-access-tool-box"] button.active,
-div[id*="mic-access-tool-box"] button:hover {
-  border-color: #1E1E1B !important;
-  color: #1E1E1B !important;
-  background-color: rgba(30, 30, 27, 0.1) !important;
-}
-
-/* Reset button */
-#mic-access-tool-box button[title*="reset"],
-#mic-access-tool-box button[title*="Reset"],
-#mic-access-tool-box [class*="reset"],
-div[id*="mic-access-tool-box"] button[class*="reset"] {
-  background: #1E1E1B !important;
-  color: white !important;
-}
-
-/* Reset button text and icon */
-#mic-access-tool-box button[title*="reset"] *,
-#mic-access-tool-box button[title*="Reset"] *,
-#mic-access-tool-box [class*="reset"] *,
-div[id*="mic-access-tool-box"] button[class*="reset"] * {
-  color: white !important;
-}
-
-/* Accessibility widget - displayed by default on both mobile and desktop */
-/* Position: opposite side from WhatsApp button (RTL sites → left, LTR sites → right) */
-#mic-access-tool-general-button,
-.mic-access-tool-general-button,
-#mic-init-access-tool .mic-access-tool-general-button,
-#mic-init-access-tool #mic-access-tool-general-button,
-._access-icon {
-  display: flex !important;
-}
-
-/* ═══════════════════════════════════════════════════════════
-   V2 REGENERATED SECTION CSS (בית-hero)
-   Added: 2026-06-25T13:04:53.697Z
-   ═══════════════════════════════════════════════════════════ */
-.index-hero-section {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  min-height: 100dvh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #1A1208;
-  overflow: hidden;
-  color: var(--text-light);
-  direction: rtl;
-}
-
-/* Background Image */
-.index-hero-section .hero-bg-image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 30%;
-  z-index: 0;
-}
-
-/* Scrim Overlay */
-.index-hero-section .hero-scrim {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  background-image: linear-gradient(
-    180deg,
-    rgba(26, 18, 8, 0.48) 0%,
-    rgba(26, 18, 8, 0.32) 40%,
-    rgba(26, 18, 8, 0.52) 100%
-  );
-}
-
-/* Decorative Stamp Seal */
-.index-hero-section .hero-stamp-seal {
-  position: absolute;
-  top: 120px;
-  inset-inline-end: 40px;
-  width: 90px;
-  height: 90px;
-  z-index: 2;
-  pointer-events: none;
-  opacity: 0.85;
-  transform: rotate(12deg);
-}
-
-.index-hero-section .hero-stamp-seal svg {
-  width: 100%;
-  height: 100%;
-}
-
-/* Content Container */
-.index-hero-section .hero-content-container {
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 120px 24px 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-/* Text Group */
-.index-hero-section .hero-text-group {
-  max-width: 800px;
-  margin-bottom: 40px;
-}
-
-.index-hero-section .hero-headline {font-family: 'Assistant', 'Heebo', sans-serif;
-  font-size: 3rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  line-height: 1.15;
-  color: var(--text-light);
-  margin: 0 0 20px 0;}
-
-.index-hero-section .hero-subtitle {
-  font-family: 'Assistant', 'Heebo', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 400;
-  line-height: 1.7;
-  color: var(--text-light);
-  margin: 0;
-  max-width: 650px;
-  margin-inline: auto;
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
-  opacity: 0.92;
-}
-
-/* CTA Group */
-.index-hero-section .hero-cta-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Primary Button */
-.index-hero-section .btn-hero-primary {
-  display: inline-block;
-  background: var(--primary);
-  color: #FFFFFF;
-  padding: 14px 32px;
-  border-radius: 100px;
-  font-family: 'Assistant', 'Heebo', sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  text-decoration: none;
-  letter-spacing: 0.01em;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 20px rgba(192, 57, 43, 0.35);
-  border: none;
-  cursor: pointer;
-  text-shadow: none;
-}
-
-.index-hero-section .btn-hero-primary:hover {
-  background: #A8322A;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 28px rgba(192, 57, 43, 0.45);
-}
-
-/* Secondary Button */
-.index-hero-section .btn-hero-secondary {
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  color: var(--text-light);
-  padding: 14px 32px;
-  border-radius: 100px;
-  font-family: 'Assistant', 'Heebo', sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  border: 1.5px solid rgba(255, 255, 255, 0.5);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-  text-shadow: none;
-}
-
-.index-hero-section .btn-hero-secondary:hover {
-  background: rgba(255, 255, 255, 0.25);
-  border-color: rgba(255, 255, 255, 0.8);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .index-hero-section {
-    min-height: 100vh;
-    min-height: 100dvh;
-    padding-top: 100px;
-  }
-
-  .index-hero-section .hero-content-container {
-    padding: 100px 20px 40px;
-  }
-
-  .index-hero-section .hero-headline {
-    font-size: 2.2rem;
-    line-height: 1.2;
-    margin-bottom: 16px;
-  }
-
-  .index-hero-section .hero-subtitle {
-    font-size: 1rem;
-    line-height: 1.6;
-    max-width: 100%;
-  }
-
-  .index-hero-section .hero-cta-group {
-    flex-direction: column;
-    width: 100%;
-    max-width: 340px;
-    margin-inline: auto;
-    gap: 12px;
-  }
-
-  .index-hero-section .btn-hero-primary,
-  .index-hero-section .btn-hero-secondary {
-    width: 100%;
-    text-align: center;
-    padding: 14px 24px;
-  }
-
-  .index-hero-section .hero-stamp-seal {
-    top: 100px;
-    inset-inline-end: 16px;
-    width: 64px;
-    height: 64px;
-    opacity: 0.7;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .index-hero-section .hero-headline {
-    font-size: 2.6rem;
-  }
-  
-  .index-hero-section .hero-content-container {
-    padding: 140px 32px 80px;
-  }
-}
-/* ZAPPY_POSTGEN_GUARD_HERO_FONT_CAP:index-hero */
-.hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 48px !important; line-height: 1.2 !important; }
-@media (max-width: 1024px) {
-  .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 36px !important; }
-}
-@media (max-width: 768px) {
-  .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 28px !important; }
-}
-
-/* ZAPPY_POSTGEN_GUARD_HERO_TYPO:בית-hero (index-hero) — stripped 1 jarring hero headline effect(s) */
-
-/* === NAVBAR STYLE OVERRIDES START === */
-.navbar { background-color: transparent !important; background-image: linear-gradient(to bottom, rgba(255,255,255,var(--nav-overlay-opacity, 0.7)), transparent) !important; transition: background-color 0.3s ease, background-image 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease, box-shadow 0.3s ease !important; }
-.zappy-catalog-menu, #zappy-catalog-menu { background-image: linear-gradient(to bottom, rgba(255,255,255,var(--nav-overlay-opacity, 0.7)), transparent) !important; transition: background 0.3s ease, background-image 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease !important;}
-.navbar .nav-menu > li > a,
-.navbar .nav-menu > .nav-item > a,
-.navbar .nav-link,
-.navbar .navbar-nav .nav-link,
-.navbar a:not(.nav-cta-btn) { color: #1E1E1B !important; }
-.navbar .nav-menu > li > a:hover,
-.navbar .nav-menu > .nav-item > a:hover,
-.navbar .nav-link:hover,
-.navbar a:not(.nav-cta-btn):hover { color: #D94B3D !important; }
-.navbar .navbar-brand, .navbar .navbar-brand a { color: #1E1E1B !important; }
-.navbar .dropdown-toggle { color: #1E1E1B !important; }
-.navbar .dropdown-toggle:hover { color: #D94B3D !important; }
-.navbar .mobile-hamburger-btn, .navbar .mobile-close-btn { color: #1E1E1B !important; }
-.navbar-toggler { color: #1E1E1B !important; border-color: #1E1E1B44 !important; }
-.navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%231E1E1B' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; }
-.navbar .dropdown-menu { background-color: #1E1E1B !important; }
-.navbar .dropdown-menu li a,
-.navbar .dropdown-menu .dropdown-item { color: #1E1E1B !important; }
-.navbar .dropdown-menu li a:hover,
-.navbar .dropdown-menu .dropdown-item:hover { color: #D94B3D !important; background-color: rgba(128,128,128,0.1) !important; }
-.navbar .sub-menu,
-.navbar ul.sub-menu,
-nav.navbar .sub-menu { background-color: #1E1E1B !important; }
-.navbar .sub-menu a,
-.navbar .sub-menu li a,
-.navbar .nav-menu .sub-menu a,
-.navbar .nav-menu .sub-menu li a,
-.navbar .zappy-products-dropdown .sub-menu a,
-nav.navbar .sub-menu li a { color: #1E1E1B !important; }
-.navbar .sub-menu a:hover,
-.navbar .sub-menu li a:hover,
-nav.navbar .sub-menu li a:hover { color: #D94B3D !important; background-color: rgba(128,128,128,0.1) !important; }
-.navbar .mobile-submenu-toggle { color: #1E1E1B !important; }
-.navbar .phone-header-btn { color: #1E1E1B !important; }
-.navbar .nav-search-input,
-.navbar .nav-search-box .nav-search-input { color: #1E1E1B !important; }
-.navbar .nav-search-input::placeholder { color: var(--text-muted, rgba(128,128,128,0.6)) !important; }
-@media (min-width: 769px) {
-  .navbar .nav-search-box .nav-search-btn { color: #1E1E1B !important; }
-  .navbar .nav-search-box .nav-search-btn svg { stroke: #1E1E1B !important; fill: none !important; }
-}
-.navbar .nav-search-result-name { color: #1E1E1B !important; }
-.navbar .nav-search-result-item a { color: #1E1E1B !important; }
-.navbar .nav-search-result-price { color: var(--accent, var(--primary)) !important; }
-.navbar .nav-search-no-results,
-.navbar .search-no-results { color: var(--text-muted, rgba(128,128,128,0.6)) !important; }
-.zappy-catalog-menu, #zappy-catalog-menu { background: transparent !important; }
-.zappy-catalog-menu .catalog-menu-item,
-.zappy-catalog-menu .catalog-menu-all { color: #1E1E1B !important; }
-.zappy-catalog-menu .catalog-menu-item:hover,
-.zappy-catalog-menu .catalog-menu-all:hover { color: #D94B3D !important; background: rgba(128,128,128,0.1) !important; }
-.navbar .cart-link.nav-cart,
-.navbar .login-link.nav-login,
-.navbar .nav-search-toggle,
-.navbar .search-toggle { background: var(--bg-light, #ffffff) !important; color: #1E1E1B !important; }
-.navbar .cart-link.nav-cart:hover,
-.navbar .login-link.nav-login:hover,
-.navbar .nav-search-toggle:hover,
-.navbar .search-toggle:hover { background: rgba(128,128,128,0.15) !important; color: #1E1E1B !important; }
-.navbar .cart-link.nav-cart svg, .navbar .login-link.nav-login svg, .navbar .nav-search-toggle svg, .navbar .search-toggle svg { color: inherit !important; fill: none !important; stroke: currentColor !important; }
-
-@media (min-width: 769px) {
-  .navbar:not(.scrolled) .dropdown-menu { background-color: #1E1E1B !important; }
-  .navbar:not(.scrolled) .dropdown-menu li a,
-  .navbar:not(.scrolled) .dropdown-menu .dropdown-item { color: #FAF9F5 !important; }
-  .navbar:not(.scrolled) .dropdown-menu li a:hover,
-  .navbar:not(.scrolled) .dropdown-menu .dropdown-item:hover { color: var(--nav-text-hover, var(--accent)) !important; }
-  .navbar:not(.scrolled) .sub-menu { background-color: #1E1E1B !important; }
-  .navbar:not(.scrolled) .sub-menu a,
-  .navbar:not(.scrolled) .sub-menu li a,
-  .navbar:not(.scrolled) .nav-menu .sub-menu a,
-  .navbar:not(.scrolled) .zappy-products-dropdown .sub-menu a { color: #FAF9F5 !important; }
-  .navbar:not(.scrolled) .sub-menu a:hover,
-  .navbar:not(.scrolled) .sub-menu li a:hover { color: var(--nav-text-hover, var(--accent)) !important; }
-}
-.navbar.scrolled { background-color: rgba(250,249,245,0.85) !important; background-image: none !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; box-shadow: 0 2px 16px rgba(0,0,0,0.12) !important; }
-.navbar.scrolled::before, .navbar.scrolled::after { background: transparent !important; opacity: 0 !important; }
-.navbar.scrolled ~ .zappy-catalog-menu, .navbar.scrolled ~ #zappy-catalog-menu, .zappy-catalog-menu.scrolled, #zappy-catalog-menu.scrolled { background: rgba(250,249,245,0.85) !important; background-image: none !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; }
-.zappy-catalog-menu.scrolled .catalog-menu-item,
-.zappy-catalog-menu.scrolled .catalog-menu-all,
-#zappy-catalog-menu.scrolled .catalog-menu-item,
-#zappy-catalog-menu.scrolled .catalog-menu-all,
-.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-item,
-.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-all,
-.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-item,
-.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-all { color: var(--frosted-text, #1E1E1B) !important; }
-.zappy-catalog-menu.scrolled .catalog-menu-item:hover,
-.zappy-catalog-menu.scrolled .catalog-menu-all:hover,
-#zappy-catalog-menu.scrolled .catalog-menu-item:hover,
-#zappy-catalog-menu.scrolled .catalog-menu-all:hover,
-.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-item:hover,
-.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-all:hover,
-.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-item:hover,
-.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-all:hover { color: var(--nav-text-hover, var(--accent)) !important; }
-.navbar.scrolled .nav-menu > li > a,
-.navbar.scrolled .nav-menu > .nav-item > a,
-.navbar.scrolled .nav-link,
-.navbar.scrolled a:not(.nav-cta-btn) { color: var(--frosted-text, #1E1E1B) !important; }
-.navbar.scrolled .nav-menu > li > a:hover,
-.navbar.scrolled .nav-menu > .nav-item > a:hover,
-.navbar.scrolled .nav-link:hover,
-.navbar.scrolled a:not(.nav-cta-btn):hover { color: var(--nav-text-hover, var(--accent)) !important; }
-.navbar.scrolled .navbar-brand, .navbar.scrolled .navbar-brand a { color: var(--frosted-text, #1E1E1B) !important; }
-.navbar.scrolled .dropdown-toggle { color: var(--frosted-text, #1E1E1B) !important; }
-.navbar.scrolled .mobile-hamburger-btn, .navbar.scrolled .mobile-close-btn { color: var(--frosted-text, #1E1E1B) !important; }
-.navbar.scrolled .phone-header-btn { color: var(--frosted-text, #1E1E1B) !important; }
-.navbar.scrolled .mobile-toggle { color: var(--frosted-text, #1E1E1B) !important; }
-.navbar.scrolled .mobile-toggle svg { color: inherit !important; }
-.navbar.scrolled .mobile-toggle svg path { stroke: currentColor !important; }
-.navbar.scrolled .mobile-hamburger-btn svg,
-.navbar.scrolled .mobile-close-btn svg,
-.navbar.scrolled .phone-header-btn svg,
-.navbar.scrolled .navbar-brand svg,
-.navbar.scrolled .logo-link svg { color: inherit !important; stroke: currentColor !important; }
-.navbar.scrolled .mobile-hamburger-btn svg path,
-.navbar.scrolled .mobile-close-btn svg path,
-.navbar.scrolled .phone-header-btn svg path,
-.navbar.scrolled .navbar-brand svg path,
-.navbar.scrolled .logo-link svg path { stroke: currentColor !important; }
-.navbar.scrolled .nav-search-btn { color: var(--frosted-text, #1E1E1B) !important; }
-.navbar.scrolled .nav-search-btn svg { stroke: var(--frosted-text, #1E1E1B) !important; fill: none !important; }
-@media (min-width: 769px) {
-  .navbar.scrolled .sub-menu,
-  .navbar.scrolled ul.sub-menu,
-  nav.navbar.scrolled .sub-menu { background-color: var(--bg-light, #ffffff) !important; border-radius: 8px !important; box-shadow: 0 4px 20px rgba(0,0,0,0.15) !important; }
-  .navbar.scrolled .sub-menu a,
-  .navbar.scrolled .sub-menu li a,
-  .navbar.scrolled .nav-menu .sub-menu a,
-  .navbar.scrolled .nav-menu .sub-menu li a,
-  .navbar.scrolled .zappy-products-dropdown .sub-menu a,
-  nav.navbar.scrolled .sub-menu li a { color: #1E1E1B !important; }
-  .navbar.scrolled .sub-menu a:hover,
-  .navbar.scrolled .sub-menu li a:hover,
-  .navbar.scrolled .nav-menu .sub-menu a:hover,
-  nav.navbar.scrolled .sub-menu li a:hover { color: #D94B3D !important; background-color: rgba(128,128,128,0.1) !important; }
-  .navbar.scrolled .dropdown-menu { background-color: var(--bg-light, #ffffff) !important; }
-  .navbar.scrolled .dropdown-menu li a,
-  .navbar.scrolled .dropdown-menu .dropdown-item { color: #1E1E1B !important; }
-  .navbar.scrolled .dropdown-menu li a:hover,
-  .navbar.scrolled .dropdown-menu .dropdown-item:hover { color: #D94B3D !important; background-color: rgba(128,128,128,0.1) !important; }
-  .navbar.scrolled .mobile-submenu-toggle { color: #1E1E1B !important; }
-}
-
-.navbar.scrolled .cart-link.nav-cart,
-.navbar.scrolled .login-link.nav-login,
-.navbar.scrolled .nav-search-toggle,
-.navbar.scrolled .search-toggle { background: var(--bg-light, #ffffff) !important; color: #1E1E1B !important; }
-@media (max-width: 768px) {
-  .navbar { background-color: transparent !important; background-image: none !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; box-shadow: none !important; }
-  /* Kill backdrop-filter on EVERY navbar state at mobile (not just base .navbar).
-     A backdrop-filter makes the navbar the containing block for fixed-positioned
-     descendants, so the fixed mobile menu's top/bottom resolve against the ~70px
-     navbar instead of the viewport and the open menu collapses to a sliver on
-     scrolled (non-home) pages. The scrolled selector must out-specify the
-     generated ".navbar.scrolled { backdrop-filter: ... !important }" rule. The
-     mobile navbar background is solid, so the blur is purely decorative here. */
-  .navbar.scrolled, nav.navbar.scrolled, .navbar.active, .navbar.open, .navbar.show, .navbar.menu-open, .zappy-catalog-menu, #zappy-catalog-menu, .zappy-catalog-menu.scrolled, #zappy-catalog-menu.scrolled { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
-  .zappy-catalog-menu, #zappy-catalog-menu { background-image: none !important; }
-  .navbar::before, .navbar::after { background: transparent !important; opacity: 0 !important; }
-  body.menu-open .navbar, body.nav-open .navbar, body.mobile-menu-open .navbar, .navbar.scrolled, .navbar.active, .navbar.open, .navbar.show, .navbar.menu-open, .navbar:has(.nav-menu.active), .navbar:has(#navMenu.active), .navbar:has(.mobile-menu.active), .navbar:has(.mobile-toggle.active), .navbar:has(#mobileToggle.active) { background-color: #1E1E1B !important; }
-  .nav-menu, .nav-menu.active, .nav-menu.nav-menu-active, #navMenu, #navMenu.active, .mobile-menu, .mobile-menu.active, .mobile-nav, .mobile-nav.active { background-color: #1E1E1B !important; background: #1E1E1B !important; }
-  .nav-menu.active, .nav-menu.nav-menu-active, #navMenu.active, .mobile-menu.active, .mobile-nav.active { height: calc(100dvh - 70px) !important; max-height: calc(100dvh - 70px) !important; overflow-y: auto !important; }
-  .nav-menu a, .nav-menu > li > a, #navMenu a, #navMenu > li > a { color: #FAF9F5 !important; }
-  .nav-menu a:hover, .nav-menu > li > a:hover { color: #D94B3D !important; }
-  .nav-menu .dropdown-menu { background: rgba(128,128,128,0.06) !important; }
-  .nav-menu .dropdown-menu a, .nav-menu .dropdown-menu li a { color: #FAF9F5 !important; }
-  .nav-menu .dropdown-menu a:hover { color: #D94B3D !important; }
-  .nav-menu .sub-menu a { color: #FAF9F5 !important; white-space: normal !important; }
-  .nav-menu .sub-menu a:hover { color: #D94B3D !important; }
-  .nav-menu > li { position: relative !important; }
-  .navbar .nav-menu .mobile-submenu-toggle { color: #FAF9F5 !important; position: static !important; height: auto !important; flex-shrink: 0 !important; align-self: stretch !important; }
-  .mobile-toggle { color: #1E1E1B !important; }
-  .mobile-toggle svg { color: inherit !important; }
-  .mobile-toggle svg path { stroke: currentColor !important; }
-  
-  /* When menu is open or navbar is scrolled in mobile, the background is dropdownBg, so text should be mobileMenuText */
-  .navbar.scrolled .mobile-toggle, .navbar.scrolled .mobile-hamburger-btn, .navbar.scrolled .mobile-close-btn,
-  .navbar.scrolled .navbar-brand, .navbar.scrolled .dropdown-toggle, .navbar.scrolled .phone-header-btn,
-  body.menu-open .navbar .mobile-toggle, body.nav-open .navbar .mobile-toggle, body.mobile-menu-open .navbar .mobile-toggle,
-  .navbar.active .mobile-toggle, .navbar.open .mobile-toggle, .navbar.show .mobile-toggle, .navbar.menu-open .mobile-toggle,
-  .navbar:has(.nav-menu.active) .mobile-toggle, .navbar:has(#navMenu.active) .mobile-toggle, .navbar:has(.mobile-menu.active) .mobile-toggle, .navbar:has(.mobile-toggle.active) .mobile-toggle,
-  body.menu-open .navbar .navbar-brand, body.nav-open .navbar .navbar-brand, body.mobile-menu-open .navbar .navbar-brand,
-  .navbar.active .navbar-brand, .navbar.open .navbar-brand, .navbar.show .navbar-brand, .navbar.menu-open .navbar-brand,
-  .navbar:has(.nav-menu.active) .navbar-brand, .navbar:has(#navMenu.active) .navbar-brand, .navbar:has(.mobile-menu.active) .navbar-brand, .navbar:has(.mobile-toggle.active) .navbar-brand,
-  body.menu-open .navbar .phone-header-btn, body.nav-open .navbar .phone-header-btn, body.mobile-menu-open .navbar .phone-header-btn,
-  .navbar.active .phone-header-btn, .navbar.open .phone-header-btn, .navbar.show .phone-header-btn, .navbar.menu-open .phone-header-btn,
-  .navbar:has(.nav-menu.active) .phone-header-btn, .navbar:has(#navMenu.active) .phone-header-btn, .navbar:has(.mobile-menu.active) .phone-header-btn, .navbar:has(.mobile-toggle.active) .phone-header-btn {
-    color: #FAF9F5 !important;
-  }
-  .navbar.scrolled .mobile-toggle svg, .navbar.scrolled .mobile-hamburger-btn svg, .navbar.scrolled .mobile-close-btn svg,
-  .navbar.scrolled .navbar-brand svg, .navbar.scrolled .dropdown-toggle svg, .navbar.scrolled .phone-header-btn svg,
-  body.menu-open .navbar .mobile-toggle svg, body.nav-open .navbar .mobile-toggle svg, body.mobile-menu-open .navbar .mobile-toggle svg,
-  .navbar.active .mobile-toggle svg, .navbar.open .mobile-toggle svg, .navbar.show .mobile-toggle svg, .navbar.menu-open .mobile-toggle svg,
-  .navbar:has(.nav-menu.active) .mobile-toggle svg, .navbar:has(#navMenu.active) .mobile-toggle svg, .navbar:has(.mobile-menu.active) .mobile-toggle svg, .navbar:has(.mobile-toggle.active) .mobile-toggle svg,
-  body.menu-open .navbar .phone-header-btn svg, body.nav-open .navbar .phone-header-btn svg, body.mobile-menu-open .navbar .phone-header-btn svg,
-  .navbar.active .phone-header-btn svg, .navbar.open .phone-header-btn svg, .navbar.show .phone-header-btn svg, .navbar.menu-open .phone-header-btn svg,
-  .navbar:has(.nav-menu.active) .phone-header-btn svg, .navbar:has(#navMenu.active) .phone-header-btn svg, .navbar:has(.mobile-menu.active) .phone-header-btn svg, .navbar:has(.mobile-toggle.active) .phone-header-btn svg,
-  body.menu-open .navbar .navbar-brand svg, body.nav-open .navbar .navbar-brand svg, body.mobile-menu-open .navbar .navbar-brand svg,
-  .navbar.active .navbar-brand svg, .navbar.open .navbar-brand svg, .navbar.show .navbar-brand svg, .navbar.menu-open .navbar-brand svg,
-  .navbar:has(.nav-menu.active) .navbar-brand svg, .navbar:has(#navMenu.active) .navbar-brand svg, .navbar:has(.mobile-menu.active) .navbar-brand svg, .navbar:has(.mobile-toggle.active) .navbar-brand svg {
-    color: #FAF9F5 !important;
-    stroke: currentColor !important;
-  }
-  .navbar.scrolled .mobile-toggle svg path, .navbar.scrolled .mobile-hamburger-btn svg path, .navbar.scrolled .mobile-close-btn svg path,
-  .navbar.scrolled .navbar-brand svg path, .navbar.scrolled .dropdown-toggle svg path, .navbar.scrolled .phone-header-btn svg path,
-  body.menu-open .navbar .mobile-toggle svg path, body.nav-open .navbar .mobile-toggle svg path, body.mobile-menu-open .navbar .mobile-toggle svg path,
-  .navbar.active .mobile-toggle svg path, .navbar.open .mobile-toggle svg path, .navbar.show .mobile-toggle svg path, .navbar.menu-open .mobile-toggle svg path,
-  .navbar:has(.nav-menu.active) .mobile-toggle svg path, .navbar:has(#navMenu.active) .mobile-toggle svg path, .navbar:has(.mobile-menu.active) .mobile-toggle svg path, .navbar:has(.mobile-toggle.active) .mobile-toggle svg path,
-  body.menu-open .navbar .phone-header-btn svg path, body.nav-open .navbar .phone-header-btn svg path, body.mobile-menu-open .navbar .phone-header-btn svg path,
-  .navbar.active .phone-header-btn svg path, .navbar.open .phone-header-btn svg path, .navbar.show .phone-header-btn svg path, .navbar.menu-open .phone-header-btn svg path,
-  .navbar:has(.nav-menu.active) .phone-header-btn svg path, .navbar:has(#navMenu.active) .phone-header-btn svg path, .navbar:has(.mobile-menu.active) .phone-header-btn svg path, .navbar:has(.mobile-toggle.active) .phone-header-btn svg path,
-  body.menu-open .navbar .navbar-brand svg path, body.nav-open .navbar .navbar-brand svg path, body.mobile-menu-open .navbar .navbar-brand svg path,
-  .navbar.active .navbar-brand svg path, .navbar.open .navbar-brand svg path, .navbar.show .navbar-brand svg path, .navbar.menu-open .navbar-brand svg path,
-  .navbar:has(.nav-menu.active) .navbar-brand svg path, .navbar:has(#navMenu.active) .navbar-brand svg path, .navbar:has(.mobile-menu.active) .navbar-brand svg path, .navbar:has(.mobile-toggle.active) .navbar-brand svg path {
-    stroke: currentColor !important;
-  }
-  
-  .navbar.scrolled .mobile-toggle svg { color: inherit !important; }
-  .navbar.scrolled .mobile-toggle svg path { stroke: currentColor !important; }
-  
-  .navbar.scrolled .nav-menu > li > a,
-  .navbar.scrolled .nav-menu > .nav-item > a,
-  .navbar.scrolled .nav-link,
-  .navbar.scrolled a:not(.nav-cta-btn) { color: #FAF9F5 !important; }
-  .cart-link.nav-cart,
-  .login-link.nav-login,
-  .nav-search-toggle,
-  .search-toggle { background: var(--bg-light, #ffffff) !important; color: #1E1E1B !important; }
-  .cart-link.nav-cart svg,
-  .login-link.nav-login svg,
-  .nav-search-toggle svg,
-  .search-toggle svg { stroke: #1E1E1B !important; color: #1E1E1B !important; }
-  .mobile-search-panel { color: #FAF9F5 !important; }
-  .mobile-search-panel input { color: #FAF9F5 !important; background: rgba(255,255,255,0.12) !important; }
-  .mobile-search-panel .close-search { color: #FAF9F5 !important; background: rgba(255,255,255,0.15) !important; }
-  .mobile-search-panel .close-search svg { stroke: #FAF9F5 !important; color: #FAF9F5 !important; }
-  .mobile-search-panel .close-search:hover { color: #FAF9F5 !important; background: rgba(255,255,255,0.25) !important; }
-  .mobile-search-panel .close-search:hover svg { stroke: #FAF9F5 !important; color: #FAF9F5 !important; }
-  .navbar .zappy-products-dropdown .sub-menu,
-  .navbar .zappy-products-dropdown > .sub-menu {
-    display: none !important; position: static !important; max-height: 0 !important;
-    overflow: hidden !important; opacity: 0 !important; visibility: hidden !important;
-    pointer-events: none !important; box-shadow: none !important; border: none !important;
-    padding: 0 !important; transform: none !important;
-  }
-  .navbar .zappy-products-dropdown:hover .sub-menu,
-  .navbar .zappy-products-dropdown:hover > .sub-menu,
-  .navbar .zappy-products-dropdown:focus-within .sub-menu,
-  .navbar .zappy-products-dropdown:focus-within > .sub-menu,
-  .navbar .menu-item-has-children:hover > .sub-menu,
-  .navbar .nav-dropdown:hover > .dropdown-menu {
-    display: none !important; opacity: 0 !important; visibility: hidden !important;
-    max-height: 0 !important; pointer-events: none !important;
-  }
-  .navbar .zappy-products-dropdown.open .sub-menu,
-  .navbar .zappy-products-dropdown.open > .sub-menu,
-  .navbar .zappy-products-dropdown .sub-menu.mobile-expanded,
-  .navbar .zappy-products-dropdown > .sub-menu.mobile-expanded,
-  .navbar .menu-item-has-children.open > .sub-menu,
-  .navbar .menu-item-has-children > .sub-menu.mobile-expanded,
-  .navbar .nav-dropdown.open > .dropdown-menu {
-    display: block !important; opacity: 1 !important; visibility: visible !important;
-    max-height: none !important; pointer-events: auto !important; position: static !important;
-    overflow-y: visible !important; padding: 0.5rem 0 !important;
-  }
-}
-/* === NAVBAR STYLE OVERRIDES END === */
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,

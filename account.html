@@ -244,8 +244,6 @@
 
 
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
@@ -259,6 +257,238 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.index-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1A1208;
+  overflow: hidden;
+  color: var(--text-light);
+  direction: rtl;
+}
+
+/* Background Image */
+.index-hero-section .hero-bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  z-index: 0;
+}
+
+/* Scrim Overlay */
+.index-hero-section .hero-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-image: linear-gradient(
+    180deg,
+    rgba(26, 18, 8, 0.48) 0%,
+    rgba(26, 18, 8, 0.32) 40%,
+    rgba(26, 18, 8, 0.52) 100%
+  );
+}
+
+/* Decorative Stamp Seal */
+.index-hero-section .hero-stamp-seal {
+  position: absolute;
+  top: 120px;
+  inset-inline-end: 40px;
+  width: 90px;
+  height: 90px;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.85;
+  transform: rotate(12deg);
+}
+
+.index-hero-section .hero-stamp-seal svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Content Container */
+.index-hero-section .hero-content-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 24px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Text Group */
+.index-hero-section .hero-text-group {
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.index-hero-section .hero-headline {font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--text-light);
+  margin: 0 0 20px 0;}
+
+.index-hero-section .hero-subtitle {
+  font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-light);
+  margin: 0;
+  max-width: 650px;
+  margin-inline: auto;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  opacity: 0.92;
+}
+
+/* CTA Group */
+.index-hero-section .hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Primary Button */
+.index-hero-section .btn-hero-primary {
+  display: inline-block;
+  background: var(--primary);
+  color: #FFFFFF;
+  padding: 14px 32px;
+  border-radius: 100px;
+  font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(192, 57, 43, 0.35);
+  border: none;
+  cursor: pointer;
+  text-shadow: none;
+}
+
+.index-hero-section .btn-hero-primary:hover {
+  background: #A8322A;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(192, 57, 43, 0.45);
+}
+
+/* Secondary Button */
+.index-hero-section .btn-hero-secondary {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--text-light);
+  padding: 14px 32px;
+  border-radius: 100px;
+  font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  text-shadow: none;
+}
+
+.index-hero-section .btn-hero-secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .index-hero-section {
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding-top: 100px;
+  }
+
+  .index-hero-section .hero-content-container {
+    padding: 100px 20px 40px;
+  }
+
+  .index-hero-section .hero-headline {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .index-hero-section .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .index-hero-section .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    max-width: 340px;
+    margin-inline: auto;
+    gap: 12px;
+  }
+
+  .index-hero-section .btn-hero-primary,
+  .index-hero-section .btn-hero-secondary {
+    width: 100%;
+    text-align: center;
+    padding: 14px 24px;
+  }
+
+  .index-hero-section .hero-stamp-seal {
+    top: 100px;
+    inset-inline-end: 16px;
+    width: 64px;
+    height: 64px;
+    opacity: 0.7;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .index-hero-section .hero-headline {
+    font-size: 2.6rem;
+  }
+  
+  .index-hero-section .hero-content-container {
+    padding: 140px 32px 80px;
+  }
+}
+/* ZAPPY_POSTGEN_GUARD_HERO_FONT_CAP:index-hero */
+.hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 48px !important; line-height: 1.2 !important; }
+@media (max-width: 1024px) {
+  .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 36px !important; }
+}
+@media (max-width: 768px) {
+  .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 28px !important; }
+}
+
+/* ZAPPY_POSTGEN_GUARD_HERO_TYPO:בית-hero (index-hero) — stripped 1 jarring hero headline effect(s) */
+
+</style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -371,16 +601,16 @@
     </div>
   <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-      <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <svg class="hamburger-icon" width="24" height="24" viewbox="0 0 24 24" fill="none">
+      <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
-      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <svg class="close-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" style="display: none;">
+      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
   <button class="phone-header-btn" data-phone="[business_phone]" aria-label="Call">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+    <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
   </button>
   <div class="nav-container">
@@ -392,7 +622,7 @@
       <a href="/products">
         מוצרים
         <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M6 9l6 6 6-6"/>
+          <path d="M6 9l6 6 6-6"></path>
         </svg>
       </a>
       <ul class="sub-menu" id="zappy-nav-category-links">
@@ -400,6 +630,9 @@
         <!-- Categories will be loaded dynamically -->
       </ul>
     </li>
+  
+
+    
   <li><a href="/">בית</a></li><li><a href="/how-it-works">איך זה עובד</a></li><li><a href="/market-story">סיפור השוק</a></li><li><a href="/contact">צור קשר</a></li></ul><div class="nav-ecommerce-icons nav-icons-left"><a href="/login" class="login-link nav-login" title="התחברות"><svg class="login-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a><a href="#cart" class="cart-link nav-cart" id="cart-drawer-toggle" title="עגלת קניות"><svg class="cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="cart-count">0</span></a><div class="nav-search-box">
     <input type="text" class="nav-search-input" id="nav-search-input" placeholder="חיפוש מוצרים..." autocomplete="off">
     <button class="nav-search-btn" id="nav-search-btn" title="חיפוש">
@@ -532,7 +765,7 @@
           <div class="address-modal">
             <div class="address-modal-header">
               <h3 id="address-modal-title" data-i18n="ecom_addAddress">הוסף כתובת</h3>
-              <button class="address-modal-close" id="address-modal-close">×</button>
+              <button class="address-modal-close" id="address-modal-close">&times;</button>
             </div>
             <div class="address-modal-body">
               <input type="hidden" id="address-edit-id">
@@ -763,8 +996,6 @@
   })();
   </script>
   <a href="https://wa.me/[whatsapp_handle]" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
-    <div data-integration="accessibility:toolbar"></div>
-
 
     <script src="/script.js"></script>
 
