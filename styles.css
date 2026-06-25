@@ -2476,8 +2476,12 @@ main { flex: 1 0 auto; }
   -webkit-mask-image: none !important; mask-image: none !important;
 }
 [data-layout-spec="בית-hero"]::before {
-  content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none;
-  background: linear-gradient(to left, var(--hero-fade-color, var(--bg-light, #ffffff)) 0%, var(--hero-fade-color, var(--bg-light, #ffffff)) 10%, transparent 58%);
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: transparent;
 }
 [data-layout-spec="בית-hero"] > :where(:not(.hero-fade-img):not([data-hero-bg]):not(img):not(svg):not(style):not(script):not([class*="divider"]):not([class*="overlay"]):not([class*="wash"]):not([class*="grid"]):not([class*="decor"]):not([style*="position: absolute"]):not([style*="position:absolute"])) { position: relative; z-index: 2; }
 [data-layout-spec="בית-hero"] .hero-fade-content {
