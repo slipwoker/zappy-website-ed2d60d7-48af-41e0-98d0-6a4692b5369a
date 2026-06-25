@@ -257,6 +257,236 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.index-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1A1208;
+  overflow: hidden;
+  color: var(--text-light);
+  direction: rtl;
+}
+
+/* Background Image */
+.index-hero-section .hero-bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  z-index: 0;
+}
+
+/* Scrim Overlay */
+.index-hero-section .hero-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-image: linear-gradient(
+    180deg,
+    rgba(26, 18, 8, 0.48) 0%,
+    rgba(26, 18, 8, 0.32) 40%,
+    rgba(26, 18, 8, 0.52) 100%
+  );
+}
+
+/* Decorative Stamp Seal */
+.index-hero-section .hero-stamp-seal {
+  position: absolute;
+  top: 120px;
+  inset-inline-end: 40px;
+  width: 90px;
+  height: 90px;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.85;
+  transform: rotate(12deg);
+}
+
+.index-hero-section .hero-stamp-seal svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Content Container */
+.index-hero-section .hero-content-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 24px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Text Group */
+.index-hero-section .hero-text-group {
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.index-hero-section .hero-headline {font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--text-light);
+  margin: 0 0 20px 0;}
+
+.index-hero-section .hero-subtitle {
+  font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-light);
+  margin: 0;
+  max-width: 650px;
+  margin-inline: auto;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  opacity: 0.92;
+}
+
+/* CTA Group */
+.index-hero-section .hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Primary Button */
+.index-hero-section .btn-hero-primary {
+  display: inline-block;
+  background: var(--primary);
+  color: #FFFFFF;
+  padding: 14px 32px;
+  border-radius: 100px;
+  font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(192, 57, 43, 0.35);
+  border: none;
+  cursor: pointer;
+  text-shadow: none;
+}
+
+.index-hero-section .btn-hero-primary:hover {
+  background: #A8322A;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(192, 57, 43, 0.45);
+}
+
+/* Secondary Button */
+.index-hero-section .btn-hero-secondary {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--text-light);
+  padding: 14px 32px;
+  border-radius: 100px;
+  font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  text-shadow: none;
+}
+
+.index-hero-section .btn-hero-secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .index-hero-section {
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding-top: 100px;
+  }
+
+  .index-hero-section .hero-content-container {
+    padding: 100px 20px 40px;
+  }
+
+  .index-hero-section .hero-headline {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .index-hero-section .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .index-hero-section .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    max-width: 340px;
+    margin-inline: auto;
+    gap: 12px;
+  }
+
+  .index-hero-section .btn-hero-primary,
+  .index-hero-section .btn-hero-secondary {
+    width: 100%;
+    text-align: center;
+    padding: 14px 24px;
+  }
+
+  .index-hero-section .hero-stamp-seal {
+    top: 100px;
+    inset-inline-end: 16px;
+    width: 64px;
+    height: 64px;
+    opacity: 0.7;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .index-hero-section .hero-headline {
+    font-size: 2.6rem;
+  }
+  
+  .index-hero-section .hero-content-container {
+    padding: 140px 32px 80px;
+  }
+}
+/* ZAPPY_POSTGEN_GUARD_HERO_FONT_CAP:index-hero */
+.hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 48px !important; line-height: 1.2 !important; }
+@media (max-width: 1024px) {
+  .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 36px !important; }
+}
+@media (max-width: 768px) {
+  .hero h1, .hero-section h1, [class*="hero-"] h1, [class~="hero"] h1, .hero .hero-title, .hero-title { font-size: 28px !important; }
+}
+
+/* ZAPPY_POSTGEN_GUARD_HERO_TYPO:בית-hero (index-hero) — stripped 1 jarring hero headline effect(s) */
+
+</style>
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -363,7 +593,7 @@
     </div>
   
 <script>window.ZAPPY_PRODUCTS_LISTING_PATH = "/products";</script>
-<script>window.ZAPPY_WEBSITE_ID = "ed2d60d7-48af-41e0-98d0-6a4692b5369a";window.ZAPPY_API_BASE = (window.location.pathname.includes('/preview') ? "https://api.zappy5.com" : "https://api.zappy5.com");</script><a class="skip-link" href="#main">דלג לתוכן הראשי</a>
+<script>window.ZAPPY_WEBSITE_ID = "ed2d60d7-48af-41e0-98d0-6a4692b5369a";window.ZAPPY_API_BASE = "https://api.zappy5.com";</script><a class="skip-link" href="#main">דלג לתוכן הראשי</a>
   <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
     <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -874,26 +1104,34 @@
 </script>
   
   <main id="main">
-    <section data-band-index="0" class="index-hero-section" data-layout-spec="בית-hero" data-hero-treatment="fade-bleed" style="--hero-fade-color: var(--bg-light);" dir="rtl" data-hero-type="fullscreen-scrim" id="index-hero-section" data-zappy-content-align="center-mid-right">
-  <img loading="eager" fetchpriority="high" class="hero-fade-img" data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="A richly stocked Mahane Yehuda market stall scene with fresh produce, jars, breads, and wrapped bundles concentrated on the left side of the frame, bright natural-light photography" width="1200" height="600" src="/assets/site-index-hero-image-1.webp" alt="דוכן שוק מחנה יהודה תוסס" data-hero-background="true" data-element-type="image" data-element-id="img-1782387949049-qvt8stl3x">
-  
-  <div class="hero-fade-content" data-zappy-align-target="true" style="">
-    <div class="hero-text-block">
-      <p><span class="hero-eyebrow">הבאסטה המרכזית</span>
-      </p><h1 class="display-xl" style="">הטעמים של<br>השוק, אצלכם<br>בדלת</h1>
-      <h3 class="hero-subtitle">מארזים מוכנים מראש או בחירה חופשית — אנחנו מלקטים מהדוכנים הכי טובים במחנה יהודה ומספקים הביתה תוך 3 ימים</h3>
-      <div class="hero-cta-row">
-        <a href="/contact" class="btn-primary" style="color: rgb(0, 0, 0) !important;" data-element-type="button" data-element-id="btn-1782387949045-7kistk8j7" data-native-element="true">לבחירת מארז</a>
-        <a href="/process" class="btn-secondary" data-element-type="button" data-element-id="btn-1782387949045-gsx4ub15x" data-native-element="true">איך זה עובד</a>
-      </div>
-      <div class="hero-ledger-rule" aria-hidden="true"></div>
-    </div>
-  </div>
-  
-  <div class="index-hero-divider-wrapper" aria-hidden="true">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,40 L0,18 Q40,12 80,16 T160,14 Q200,18 240,12 T320,16 Q360,10 400,14 T480,12 Q520,18 560,14 T640,16 Q680,10 720,14 T800,12 Q840,18 880,14 T960,16 Q1000,10 1040,14 T1120,12 Q1160,18 1200,14 L1200,40 Z" fill="var(--bg-light)"></path>
+    <section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-scrim" id="index-hero-section">
+  <!-- Background Image -->
+  <img data-hero-bg="true" class="hero-bg-image" data-context="A vibrant, high-angle wide shot of the Mahane Yehuda market in Jerusalem during golden hour. Stalls overflowing with colorful fresh produce, spices, artisan breads, and dried fruits. Warm, bustling atmosphere with soft light streaming through the covered alleyway. Rich textures of wood, burlap sacks, and fresh herbs. Authentic Israeli marketplace energy, shallow depth of field focusing on the foreground goods while showing the depth of the market behind." width="1200" height="600" src="/assets/e-commerce-food-market-products-section-בית-hero-index-hero-image-1.webp" alt="שוק מחנה יהודה התוסס בירושלים">
+
+  <!-- Scrim Overlay -->
+  <div class="hero-scrim" aria-hidden="true"></div>
+
+  <!-- Decorative Stamp Seal -->
+  <div class="hero-stamp-seal" aria-hidden="true">
+    <svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="var(--primary)" stroke-width="1.5">
+      <circle cx="45" cy="45" r="42"></circle>
+      <circle cx="45" cy="45" r="38" stroke-dasharray="4 3"></circle>
+      <path d="M45 8 L45 13 M45 77 L45 82 M8 45 L13 45 M77 45 L82 45"></path>
+      <text x="45" y="50" text-anchor="middle" font-size="10" font-weight="700" fill="var(--primary)" stroke="none" font-family="Assistant, sans-serif">שוק</text>
     </svg>
+  </div>
+
+  <!-- Content Overlay -->
+  <div class="hero-content-container">
+    <div class="hero-text-group">
+      <h1 class="hero-headline">הטעם האמיתי של השוק,<br>ישר עד הבית</h1>
+      <h3 class="hero-subtitle">חבילות מוצרים מובחרות ממחנה יהודה — אוצרים עבורכם את המיטב ומביאים את החוויה הירושלמית אליכם תוך שלושה ימים</h3>
+    </div>
+    
+    <div class="hero-cta-group">
+      <a href="#bundles" class="btn-hero-primary">לגלות החבילות</a>
+      <a href="#custom" class="btn-hero-secondary">להרכיב סל אישי</a>
+    </div>
   </div>
 </section>
 
