@@ -1,0 +1,107 @@
+# הבאסטה המרכזית — Generative Engine Optimization Map
+
+> A vibrant and colorful e-commerce experience rooted in the iconic Mahane Yehuda market in Jerusalem. The brand offers curated pre-made product bundles sourced directly from the market, as well as a custom selection service where customers choose their own products and receive them within 3 days. The identity is lively, authentic, and deeply tied to the rich cultural atmosphere of the shuk — think bold colors, fresh produce, artisan goods, and the energy of a bustling Israeli marketplace.
+
+---
+
+## Pages
+
+### בית
+https://-ed2d60d7.zappy5.app
+גלו מארזי אוכל שוק צבעוניים ומלאי טעם מירושלים. בחרו מוצרים בעצמכם או הזמינו סל מוכן – והכול מגיע עד הבית תוך 3 ימים. חוויית שוק אמיתית, עכשיו בלחיצת כפתור!
+
+### איך זה עובד
+https://-ed2d60d7.zappy5.app/how-it-works
+תוהים איך מביאים את האנרגיה של מחנה יהודה הביתה? בחרו סחורה טרייה, ארזו לכם מארז מוצרי שוק איכותיים למשלוח, ותוך 72 שעות האוצר שלכם דופק בדלת. קל, מהיר ומלא טעם.
+
+### סיפור השוק
+https://-ed2d60d7.zappy5.app/market-story
+מהדוכנים הכי נועזים במחנה יהודה ועד למפתן ביתכם – זהו סיפורו של מארז מוצרי שוק איכותיים למשלוח שטומן בחובו ניחוחות, צבעים ואותנטיות ישראלית שאי אפשר לעמוד בפניה.
+
+### צור קשר
+https://-ed2d60d7.zappy5.app/contact
+רוצים להרכיב סל מתנה אוכל מיוחד משלכם? צרו קשר עם צוות הבאסטה המרכזית ונעזור לכם לבחור את המארז המושלם – טרי, צבעוני ומלא בנשמה של השוק. אנחנו כאן בשבילכם!
+
+### Products
+https://-ed2d60d7.zappy5.app/products
+המוצרים שלנו - הבאסטה המרכזית
+
+### Cart
+https://-ed2d60d7.zappy5.app/cart
+עגלת הקניות שלך
+
+### Checkout
+https://-ed2d60d7.zappy5.app/checkout
+תשלום
+
+### Login
+https://-ed2d60d7.zappy5.app/login
+התחברות לקוחות
+
+### Account
+https://-ed2d60d7.zappy5.app/account
+החשבון שלי
+
+### Order Success
+https://-ed2d60d7.zappy5.app/order-success
+תודה על ההזמנה
+
+### Product Detail
+https://-ed2d60d7.zappy5.app/product/:slug
+פרטי המוצר - הבאסטה המרכזית
+
+### Category
+https://-ed2d60d7.zappy5.app/category/:slug
+מוצרים - הבאסטה המרכזית
+
+### תודה שפניתם אלינו
+https://-ed2d60d7.zappy5.app/thank-you
+הבאסטה המרכזית - תודה שפניתם אלינו
+
+## Legal & Policy
+
+### Privacy Policy
+https://-ed2d60d7.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://-ed2d60d7.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://-ed2d60d7.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+## Products
+
+_No products are currently configured._
+
+---
+
+# Business Context (for LLM understanding)
+
+## About הבאסטה המרכזית
+A vibrant and colorful e-commerce experience rooted in the iconic Mahane Yehuda market in Jerusalem. The brand offers curated pre-made product bundles sourced directly from the market, as well as a custom selection service where customers choose their own products and receive them within 3 days. The identity is lively, authentic, and deeply tied to the rich cultural atmosphere of the shuk — think bold colors, fresh produce, artisan goods, and the energy of a bustling Israeli marketplace.
+
+## Target Audience
+- פודיז עירוניים
+- מחפשי מתנות ייחודיות
+- צרכנים מודעים לבריאות
+- אוהבי שווקים
+- מחפשי מתנות אוכל
+- אוהבים אוכל אותנטי וטרי
+
+## Industry
+E-commerce / Food & Market Products
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://-ed2d60d7.zappy5.app/sitemap.xml
+- Robots: https://-ed2d60d7.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://-ed2d60d7.zappy5.app/llms-full.txt
+- Products (JSON): https://-ed2d60d7.zappy5.app/products.json
+- Products (Google Merchant RSS): https://-ed2d60d7.zappy5.app/product-feed.xml
