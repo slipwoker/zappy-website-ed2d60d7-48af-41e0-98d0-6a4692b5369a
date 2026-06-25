@@ -7,69 +7,69 @@
 ## Pages
 
 ### בית
-https://-ed2d60d7.zappy5.app
+https://example.com
 גלו מארזי אוכל שוק צבעוניים ומלאי טעם מירושלים. בחרו מוצרים בעצמכם או הזמינו סל מוכן – והכול מגיע עד הבית תוך 3 ימים. חוויית שוק אמיתית, עכשיו בלחיצת כפתור!
 
 ### איך זה עובד
-https://-ed2d60d7.zappy5.app/how-it-works
+https://example.com/how-it-works
 תוהים איך מביאים את האנרגיה של מחנה יהודה הביתה? בחרו סחורה טרייה, ארזו לכם מארז מוצרי שוק איכותיים למשלוח, ותוך 72 שעות האוצר שלכם דופק בדלת. קל, מהיר ומלא טעם.
 
 ### סיפור השוק
-https://-ed2d60d7.zappy5.app/market-story
+https://example.com/market-story
 מהדוכנים הכי נועזים במחנה יהודה ועד למפתן ביתכם – זהו סיפורו של מארז מוצרי שוק איכותיים למשלוח שטומן בחובו ניחוחות, צבעים ואותנטיות ישראלית שאי אפשר לעמוד בפניה.
 
 ### צור קשר
-https://-ed2d60d7.zappy5.app/contact
+https://example.com/contact
 רוצים להרכיב סל מתנה אוכל מיוחד משלכם? צרו קשר עם צוות הבאסטה המרכזית ונעזור לכם לבחור את המארז המושלם – טרי, צבעוני ומלא בנשמה של השוק. אנחנו כאן בשבילכם!
 
 ### Products
-https://-ed2d60d7.zappy5.app/products
+https://example.com/products
 המוצרים שלנו - הבאסטה המרכזית
 
 ### Cart
-https://-ed2d60d7.zappy5.app/cart
+https://example.com/cart
 עגלת הקניות שלך
 
 ### Checkout
-https://-ed2d60d7.zappy5.app/checkout
+https://example.com/checkout
 תשלום
 
 ### Login
-https://-ed2d60d7.zappy5.app/login
+https://example.com/login
 התחברות לקוחות
 
 ### Account
-https://-ed2d60d7.zappy5.app/account
+https://example.com/account
 החשבון שלי
 
 ### Order Success
-https://-ed2d60d7.zappy5.app/order-success
+https://example.com/order-success
 תודה על ההזמנה
 
 ### Product Detail
-https://-ed2d60d7.zappy5.app/product/:slug
+https://example.com/product/:slug
 פרטי המוצר - הבאסטה המרכזית
 
 ### Category
-https://-ed2d60d7.zappy5.app/category/:slug
+https://example.com/category/:slug
 מוצרים - הבאסטה המרכזית
 
 ### תודה שפניתם אלינו
-https://-ed2d60d7.zappy5.app/thank-you
+https://example.com/thank-you
 הבאסטה המרכזית - תודה שפניתם אלינו
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://-ed2d60d7.zappy5.app/privacy
+https://example.com/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://-ed2d60d7.zappy5.app/terms
+https://example.com/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://-ed2d60d7.zappy5.app/accessibility
+https://example.com/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -100,8 +100,8 @@ E-commerce / Food & Market Products
 
 # Machine-readable feeds
 
-- Sitemap (XML): https://-ed2d60d7.zappy5.app/sitemap.xml
-- Robots: https://-ed2d60d7.zappy5.app/robots.txt
-- Flattened page text (for LLMs): https://-ed2d60d7.zappy5.app/llms-full.txt
-- Products (JSON): https://-ed2d60d7.zappy5.app/products.json
-- Products (Google Merchant RSS): https://-ed2d60d7.zappy5.app/product-feed.xml
+- Sitemap (XML): https://example.com/sitemap.xml
+- Robots: https://example.com/robots.txt
+- Flattened page text (for LLMs): https://example.com/llms-full.txt
+- Products (JSON): https://example.com/products.json
+- Products (Google Merchant RSS): https://example.com/product-feed.xml
