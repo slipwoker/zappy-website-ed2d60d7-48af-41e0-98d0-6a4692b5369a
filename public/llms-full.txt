@@ -2883,7 +2883,7 @@ Description: החשבון שלי
 
 ### הוסף כתובת
 
-&times;
+×
 
 
 
@@ -5123,6 +5123,36 @@ Description: הבאסטה המרכזית - תודה שפניתם אלינו
 
 נגישות
 נוצר באמצעות Zappy
+
+---
+
+## Product Catalog
+
+### מארז מתוקים 
+URL: https://example.com/product/marz-mtvkym-99q3tz
+Price: 129.00 ILS
+Availability: In stock
+
+---
+
+### מארז מהשדה
+URL: https://example.com/product/marz-mhshdh-fcat0u
+Price: 169.00 ILS
+Availability: In stock
+
+---
+
+### מארז כל טוב
+URL: https://example.com/product/marz-kl-tvb-v8t13w
+Price: 259.00 ILS
+Availability: In stock
+
+---
+
+### מארז גבינות השוק
+URL: https://example.com/product/marz-gbynvt-hshvk-hth0db
+Price: 189.00 ILS
+Availability: In stock
 
 ---
 

@@ -76,7 +76,31 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-_No products are currently configured._
+**Total active products: 4**
+
+### מארז מתוקים 
+https://example.com/product/marz-mtvkym-99q3tz
+- Price: 129.00 ILS
+- Availability: In stock
+- Image: https://example.com/assets/image-product-image-1782393971920-401h4x.webp
+
+### מארז מהשדה
+https://example.com/product/marz-mhshdh-fcat0u
+- Price: 169.00 ILS
+- Availability: In stock
+- Image: https://example.com/assets/image-product-image-1782393919377-ytjvfl.webp
+
+### מארז כל טוב
+https://example.com/product/marz-kl-tvb-v8t13w
+- Price: 259.00 ILS
+- Availability: In stock
+- Image: https://example.com/assets/image-product-image-1782393850955-9z2a14.webp
+
+### מארז גבינות השוק
+https://example.com/product/marz-gbynvt-hshvk-hth0db
+- Price: 189.00 ILS
+- Availability: In stock
+- Image: https://example.com/assets/image-product-image-1782393793279-7xn4yr.webp
 
 ---
 

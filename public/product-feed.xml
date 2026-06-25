@@ -4,6 +4,54 @@
     <title>הבאסטה המרכזית</title>
     <link>https://example.com</link>
     <description>Product feed for הבאסטה המרכזית</description>
-    <lastBuildDate>Thu, 25 Jun 2026 13:22:29 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 13:30:27 GMT</lastBuildDate>
+    <item>
+      <g:id>f5d1c1bf-9e3b-4c11-ba12-f6b62e516601</g:id>
+      <g:title>מארז מתוקים </g:title>
+      <g:description>מארז מתוקים</g:description>
+      <g:link>https://example.com/product/marz-mtvkym-99q3tz</g:link>
+      <g:image_link>https://example.com/assets/image-product-image-1782393971920-401h4x.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>129.00 ILS</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>הבאסטה המרכזית</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
+    <item>
+      <g:id>8bc35b0e-468d-49ef-925e-2f51c3714359</g:id>
+      <g:title>מארז מהשדה</g:title>
+      <g:description>מארז מהשדה</g:description>
+      <g:link>https://example.com/product/marz-mhshdh-fcat0u</g:link>
+      <g:image_link>https://example.com/assets/image-product-image-1782393919377-ytjvfl.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>169.00 ILS</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>הבאסטה המרכזית</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
+    <item>
+      <g:id>f6dbb3bb-5634-4d4c-a0ac-d6e11ab7003f</g:id>
+      <g:title>מארז כל טוב</g:title>
+      <g:description>מארז כל טוב</g:description>
+      <g:link>https://example.com/product/marz-kl-tvb-v8t13w</g:link>
+      <g:image_link>https://example.com/assets/image-product-image-1782393850955-9z2a14.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>259.00 ILS</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>הבאסטה המרכזית</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
+    <item>
+      <g:id>1cf8c5ac-5739-4e51-9e67-d4261972238d</g:id>
+      <g:title>מארז גבינות השוק</g:title>
+      <g:description>מארז גבינות השוק</g:description>
+      <g:link>https://example.com/product/marz-gbynvt-hshvk-hth0db</g:link>
+      <g:image_link>https://example.com/assets/image-product-image-1782393793279-7xn4yr.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>189.00 ILS</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>הבאסטה המרכזית</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
   </channel>
 </rss>
